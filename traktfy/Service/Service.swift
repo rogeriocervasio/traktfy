@@ -34,24 +34,28 @@ public class Service: BaseService {
         return (object?["message"] != nil ? (object?["message"] as? String)! : "")
     }
     
-    /*
-    public func getRepositories(_ q: String, _ sort: String, _ page: Int, completion: ((_ finished: Bool, _ repositories: Repositories?) -> Void)? = nil) -> Request {
+    // GET https://api.trakt.tv/shows/44768/seasons/1?extended=full
+    
+    
+    public func getShowSeasons(traktID: Int, extendedOptions: String, completion: ((_ finished: Bool, _ seasons: [Season]?) -> Void)? = nil) -> Request {
+        // GET https://api.trakt.tv/shows/id/seasons
+        // GET https://api.trakt.tv/shows/44768/seasons?extended=full&page=1
         
-        let parameters = ["q": q, "sort": sort, "page": page] as [String : Any]
+        let parameters = ["extended": extendedOptions] as [String : Any]
         
-        return self.apiRequest(.get, address: self.baseAPI! + "search/repositories", parameters: parameters) { (_ finished, _ response) in
+        return self.apiRequest(.get, address: self.baseAPI! + "/shows/\(traktID)/seasons", parameters: parameters) { (_ finished, _ response) in
             
-            var repositories: Repositories?
+            var seasons: [Season]?
             
             if finished {
                 
-                repositories = Mapper<Repositories>().map(JSONObject: response)
+                seasons = Mapper<Season>().mapArray(JSONObject: response)
             }
             
-            completion?(finished, repositories)
+            completion?(finished, seasons)
         }
     }
-    */
+ 
     
     public func getSearchedSeries(extendedOptions: String, query: String, page: Int, completion: ((_ finished: Bool, _ show: [Show]?, _ message: String?) -> Void)? = nil) -> Request {
         //  GET https://api.trakt.tv/search/show?extended=full&query=thebridge&page=1

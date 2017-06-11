@@ -21,6 +21,25 @@ public class Show: NSObject, Mappable {
     public var traktTmdb: Int?
     public var traktTvrage: String?
     public var showOverview: String?
+    public var firstAired: Date?
+    public var airsDay: String?
+    public var airsTime: String?
+    public var airsTimezone: String?
+    public var runtime: Int?
+    public var certification: String?
+    public var network: String?
+    public var country: String?
+    public var trailer: String?
+    public var homepage: String?
+    public var status: String?
+    public var rating: Double?
+    public var votes: Int?
+    public var updatedAt: Date?
+    public var language: String?
+    public var availableTranslations: [String]?
+    public var genres: [String]?
+    public var airedEpisodes: Int?
+    
     
     required public override init() {}
     
@@ -38,6 +57,24 @@ public class Show: NSObject, Mappable {
         self.traktTmdb <- map["show.ids.tmdb"]
         self.traktTvrage <- map["show.ids.tvrage"]
         self.showOverview <- map["show.overview"]
+        self.firstAired     <- (map["first_aired"], ISO8601DateTransform())
+        self.airsDay        <- map["airs.day"]
+        self.airsTime       <- map["airs.time"]
+        self.airsTimezone   <- map["airs.timezone"]
+        self.runtime        <- map["runtime"]
+        self.certification  <- map["certification"]
+        self.network        <- map["network"]
+        self.country        <- map["country"]
+        self.trailer        <- map["trailer"]
+        self.homepage       <- map["homepage"]
+        self.status         <- map["status"]
+        self.rating         <- map["rating"]
+        self.votes          <- map["votes"]
+        self.updatedAt      <- (map["updated_at"], ISO8601DateTransform())
+        self.language       <- map["language"]
+        self.availableTranslations <- map["available_translations"]
+        self.genres         <- map["genres"]
+        self.airedEpisodes  <- map["aired_episodes"]
     }
 }
 /*

@@ -32,6 +32,21 @@ class MySeriesViewController: UITableViewController, NSFetchedResultsControllerD
         //
     }
     
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "segueShowExpand" {
+            
+            print("MySeriesViewController \(#function)")
+            
+            let showDetailViewController = segue.destination as! ShowDetailViewController
+            
+            showDetailViewController.showEntity = sender as? ShowEntity
+        }
+        
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -50,6 +65,15 @@ class MySeriesViewController: UITableViewController, NSFetchedResultsControllerD
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let showEntity = self.fetchedResultsController.object(at: indexPath)
+        
+        print("MySeriesViewController \(#function) - show.showTitle: \(String(describing: showEntity.showTitle?.description)) - traktID: \(showEntity.traktID.description)")
+        
+        self.performSegue(withIdentifier: "segueShowExpand", sender: showEntity)
+    }
+
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true

@@ -8,8 +8,9 @@
 
 import ObjectMapper
 
-public class Show: Mappable {
+public class Show: NSObject, Mappable {
     
+    public var following: Bool?
     public var type: String?
     public var score: NSNumber?
     public var showTitle: String?
@@ -21,7 +22,7 @@ public class Show: Mappable {
     public var traktTvrage: String?
     public var showOverview: String?
     
-    required public init() {}
+    required public override init() {}
     
     required public init?(map: Map) {}
     

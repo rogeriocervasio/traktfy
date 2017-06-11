@@ -1,0 +1,683 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A1DFF891EE1F84F00883A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1DFF881EE1F84F00883A3C /* AppDelegate.swift */; };
+		1A1DFF8E1EE1F84F00883A3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A1DFF8C1EE1F84F00883A3C /* Main.storyboard */; };
+		1A1DFF911EE1F84F00883A3C /* traktfy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A1DFF8F1EE1F84F00883A3C /* traktfy.xcdatamodeld */; };
+		1A1DFF931EE1F84F00883A3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A1DFF921EE1F84F00883A3C /* Assets.xcassets */; };
+		1A1DFF961EE1F84F00883A3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A1DFF941EE1F84F00883A3C /* LaunchScreen.storyboard */; };
+		1A1DFFA11EE1F84F00883A3C /* traktfyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1DFFA01EE1F84F00883A3C /* traktfyTests.swift */; };
+		1A1DFFAC1EE1F84F00883A3C /* traktfyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1DFFAB1EE1F84F00883A3C /* traktfyUITests.swift */; };
+		1A1DFFBA1EE20E9700883A3C /* MySeriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1DFFB91EE20E9700883A3C /* MySeriesViewController.swift */; };
+		1ABEC1EF1EEC602E0082BC86 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABEC1EE1EEC602E0082BC86 /* BaseModel.swift */; };
+		1ABEC1F11EEC6BDC0082BC86 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABEC1F01EEC6BDC0082BC86 /* SearchViewController.swift */; };
+		1ABEC1F31EEC6F670082BC86 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABEC1F21EEC6F670082BC86 /* SearchTableViewCell.swift */; };
+		1ABEC1F51EECBC540082BC86 /* ShowDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABEC1F41EECBC540082BC86 /* ShowDetailViewController.swift */; };
+		1AC4978B1EE715E70061A40F /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC4978A1EE715E70061A40F /* BaseService.swift */; };
+		1AC4978D1EE7168D0061A40F /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC4978C1EE7168D0061A40F /* Service.swift */; };
+		1AC4978F1EE71AE90061A40F /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC4978E1EE71AE90061A40F /* Show.swift */; };
+		1AC497911EE8484A0061A40F /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC497901EE8484A0061A40F /* CoreDataStack.swift */; };
+		3FE08933D755627B2A3EF5CE /* Pods_traktfy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F76516F2637020134ABEA72 /* Pods_traktfy.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A1DFF9D1EE1F84F00883A3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A1DFF7D1EE1F84F00883A3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A1DFF841EE1F84F00883A3C;
+			remoteInfo = traktfy;
+		};
+		1A1DFFA81EE1F84F00883A3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A1DFF7D1EE1F84F00883A3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A1DFF841EE1F84F00883A3C;
+			remoteInfo = traktfy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A1DFF851EE1F84F00883A3C /* traktfy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = traktfy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A1DFF881EE1F84F00883A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1A1DFF8D1EE1F84F00883A3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1A1DFF901EE1F84F00883A3C /* traktfy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = traktfy.xcdatamodel; sourceTree = "<group>"; };
+		1A1DFF921EE1F84F00883A3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A1DFF951EE1F84F00883A3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1A1DFF971EE1F84F00883A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A1DFF9C1EE1F84F00883A3C /* traktfyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = traktfyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A1DFFA01EE1F84F00883A3C /* traktfyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = traktfyTests.swift; sourceTree = "<group>"; };
+		1A1DFFA21EE1F84F00883A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A1DFFA71EE1F84F00883A3C /* traktfyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = traktfyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A1DFFAB1EE1F84F00883A3C /* traktfyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = traktfyUITests.swift; sourceTree = "<group>"; };
+		1A1DFFAD1EE1F84F00883A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A1DFFB91EE20E9700883A3C /* MySeriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySeriesViewController.swift; sourceTree = "<group>"; };
+		1ABEC1EE1EEC602E0082BC86 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseModel.swift; path = Model/BaseModel.swift; sourceTree = "<group>"; };
+		1ABEC1F01EEC6BDC0082BC86 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		1ABEC1F21EEC6F670082BC86 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		1ABEC1F41EECBC540082BC86 /* ShowDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowDetailViewController.swift; sourceTree = "<group>"; };
+		1AC4978A1EE715E70061A40F /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseService.swift; path = Service/BaseService.swift; sourceTree = "<group>"; };
+		1AC4978C1EE7168D0061A40F /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Service.swift; path = Service/Service.swift; sourceTree = "<group>"; };
+		1AC4978E1EE71AE90061A40F /* Show.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Show.swift; path = Model/Show.swift; sourceTree = "<group>"; };
+		1AC497901EE8484A0061A40F /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		6F76516F2637020134ABEA72 /* Pods_traktfy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_traktfy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8F9A0272D45E6AF55D5EA5E /* Pods-traktfy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-traktfy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-traktfy/Pods-traktfy.debug.xcconfig"; sourceTree = "<group>"; };
+		ED5D65A8C84C42F3F2DF69D4 /* Pods-traktfy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-traktfy.release.xcconfig"; path = "Pods/Target Support Files/Pods-traktfy/Pods-traktfy.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A1DFF821EE1F84F00883A3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FE08933D755627B2A3EF5CE /* Pods_traktfy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A1DFF991EE1F84F00883A3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A1DFFA41EE1F84F00883A3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A1DFF7C1EE1F84F00883A3C = {
+			isa = PBXGroup;
+			children = (
+				1A1DFF871EE1F84F00883A3C /* traktfy */,
+				1A1DFF9F1EE1F84F00883A3C /* traktfyTests */,
+				1A1DFFAA1EE1F84F00883A3C /* traktfyUITests */,
+				1A1DFF861EE1F84F00883A3C /* Products */,
+				4A4E0EB5B142F7157AEF26DF /* Pods */,
+				8946C3AF31A483ACB809EAC5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1A1DFF861EE1F84F00883A3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A1DFF851EE1F84F00883A3C /* traktfy.app */,
+				1A1DFF9C1EE1F84F00883A3C /* traktfyTests.xctest */,
+				1A1DFFA71EE1F84F00883A3C /* traktfyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A1DFF871EE1F84F00883A3C /* traktfy */ = {
+			isa = PBXGroup;
+			children = (
+				1AC497891EE711530061A40F /* Service */,
+				1AC497881EE7114C0061A40F /* Model */,
+				1A1DFFBB1EE20EDA00883A3C /* Data */,
+				1A1DFF881EE1F84F00883A3C /* AppDelegate.swift */,
+				1A1DFFB91EE20E9700883A3C /* MySeriesViewController.swift */,
+				1ABEC1F01EEC6BDC0082BC86 /* SearchViewController.swift */,
+				1ABEC1F21EEC6F670082BC86 /* SearchTableViewCell.swift */,
+				1ABEC1F41EECBC540082BC86 /* ShowDetailViewController.swift */,
+				1A1DFF8C1EE1F84F00883A3C /* Main.storyboard */,
+				1A1DFF941EE1F84F00883A3C /* LaunchScreen.storyboard */,
+				1A1DFF921EE1F84F00883A3C /* Assets.xcassets */,
+				1A1DFF971EE1F84F00883A3C /* Info.plist */,
+			);
+			path = traktfy;
+			sourceTree = "<group>";
+		};
+		1A1DFF9F1EE1F84F00883A3C /* traktfyTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A1DFFA01EE1F84F00883A3C /* traktfyTests.swift */,
+				1A1DFFA21EE1F84F00883A3C /* Info.plist */,
+			);
+			path = traktfyTests;
+			sourceTree = "<group>";
+		};
+		1A1DFFAA1EE1F84F00883A3C /* traktfyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1A1DFFAB1EE1F84F00883A3C /* traktfyUITests.swift */,
+				1A1DFFAD1EE1F84F00883A3C /* Info.plist */,
+			);
+			path = traktfyUITests;
+			sourceTree = "<group>";
+		};
+		1A1DFFBB1EE20EDA00883A3C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1A1DFF8F1EE1F84F00883A3C /* traktfy.xcdatamodeld */,
+				1AC497901EE8484A0061A40F /* CoreDataStack.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		1AC497881EE7114C0061A40F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1AC4978E1EE71AE90061A40F /* Show.swift */,
+				1ABEC1EE1EEC602E0082BC86 /* BaseModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1AC497891EE711530061A40F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1AC4978A1EE715E70061A40F /* BaseService.swift */,
+				1AC4978C1EE7168D0061A40F /* Service.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		4A4E0EB5B142F7157AEF26DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8F9A0272D45E6AF55D5EA5E /* Pods-traktfy.debug.xcconfig */,
+				ED5D65A8C84C42F3F2DF69D4 /* Pods-traktfy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8946C3AF31A483ACB809EAC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F76516F2637020134ABEA72 /* Pods_traktfy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A1DFF841EE1F84F00883A3C /* traktfy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A1DFFB01EE1F84F00883A3C /* Build configuration list for PBXNativeTarget "traktfy" */;
+			buildPhases = (
+				1BE7ECF2D075F24FBC8E2DCF /* [CP] Check Pods Manifest.lock */,
+				1A1DFF811EE1F84F00883A3C /* Sources */,
+				1A1DFF821EE1F84F00883A3C /* Frameworks */,
+				1A1DFF831EE1F84F00883A3C /* Resources */,
+				E7E718B9576F06FCB94FDF6B /* [CP] Embed Pods Frameworks */,
+				83ED435C48C12B3B652C882C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = traktfy;
+			productName = traktfy;
+			productReference = 1A1DFF851EE1F84F00883A3C /* traktfy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1A1DFF9B1EE1F84F00883A3C /* traktfyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A1DFFB31EE1F84F00883A3C /* Build configuration list for PBXNativeTarget "traktfyTests" */;
+			buildPhases = (
+				1A1DFF981EE1F84F00883A3C /* Sources */,
+				1A1DFF991EE1F84F00883A3C /* Frameworks */,
+				1A1DFF9A1EE1F84F00883A3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A1DFF9E1EE1F84F00883A3C /* PBXTargetDependency */,
+			);
+			name = traktfyTests;
+			productName = traktfyTests;
+			productReference = 1A1DFF9C1EE1F84F00883A3C /* traktfyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1A1DFFA61EE1F84F00883A3C /* traktfyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A1DFFB61EE1F84F00883A3C /* Build configuration list for PBXNativeTarget "traktfyUITests" */;
+			buildPhases = (
+				1A1DFFA31EE1F84F00883A3C /* Sources */,
+				1A1DFFA41EE1F84F00883A3C /* Frameworks */,
+				1A1DFFA51EE1F84F00883A3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A1DFFA91EE1F84F00883A3C /* PBXTargetDependency */,
+			);
+			name = traktfyUITests;
+			productName = traktfyUITests;
+			productReference = 1A1DFFA71EE1F84F00883A3C /* traktfyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A1DFF7D1EE1F84F00883A3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = ACME;
+				TargetAttributes = {
+					1A1DFF841EE1F84F00883A3C = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					1A1DFF9B1EE1F84F00883A3C = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1A1DFF841EE1F84F00883A3C;
+					};
+					1A1DFFA61EE1F84F00883A3C = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1A1DFF841EE1F84F00883A3C;
+					};
+				};
+			};
+			buildConfigurationList = 1A1DFF801EE1F84F00883A3C /* Build configuration list for PBXProject "traktfy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A1DFF7C1EE1F84F00883A3C;
+			productRefGroup = 1A1DFF861EE1F84F00883A3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A1DFF841EE1F84F00883A3C /* traktfy */,
+				1A1DFF9B1EE1F84F00883A3C /* traktfyTests */,
+				1A1DFFA61EE1F84F00883A3C /* traktfyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A1DFF831EE1F84F00883A3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A1DFF961EE1F84F00883A3C /* LaunchScreen.storyboard in Resources */,
+				1A1DFF931EE1F84F00883A3C /* Assets.xcassets in Resources */,
+				1A1DFF8E1EE1F84F00883A3C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A1DFF9A1EE1F84F00883A3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A1DFFA51EE1F84F00883A3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BE7ECF2D075F24FBC8E2DCF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		83ED435C48C12B3B652C882C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-traktfy/Pods-traktfy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7E718B9576F06FCB94FDF6B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-traktfy/Pods-traktfy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A1DFF811EE1F84F00883A3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AC497911EE8484A0061A40F /* CoreDataStack.swift in Sources */,
+				1AC4978F1EE71AE90061A40F /* Show.swift in Sources */,
+				1AC4978B1EE715E70061A40F /* BaseService.swift in Sources */,
+				1ABEC1F11EEC6BDC0082BC86 /* SearchViewController.swift in Sources */,
+				1A1DFF911EE1F84F00883A3C /* traktfy.xcdatamodeld in Sources */,
+				1AC4978D1EE7168D0061A40F /* Service.swift in Sources */,
+				1A1DFF891EE1F84F00883A3C /* AppDelegate.swift in Sources */,
+				1ABEC1EF1EEC602E0082BC86 /* BaseModel.swift in Sources */,
+				1A1DFFBA1EE20E9700883A3C /* MySeriesViewController.swift in Sources */,
+				1ABEC1F31EEC6F670082BC86 /* SearchTableViewCell.swift in Sources */,
+				1ABEC1F51EECBC540082BC86 /* ShowDetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A1DFF981EE1F84F00883A3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A1DFFA11EE1F84F00883A3C /* traktfyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A1DFFA31EE1F84F00883A3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A1DFFAC1EE1F84F00883A3C /* traktfyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A1DFF9E1EE1F84F00883A3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A1DFF841EE1F84F00883A3C /* traktfy */;
+			targetProxy = 1A1DFF9D1EE1F84F00883A3C /* PBXContainerItemProxy */;
+		};
+		1A1DFFA91EE1F84F00883A3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A1DFF841EE1F84F00883A3C /* traktfy */;
+			targetProxy = 1A1DFFA81EE1F84F00883A3C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1A1DFF8C1EE1F84F00883A3C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A1DFF8D1EE1F84F00883A3C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1A1DFF941EE1F84F00883A3C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A1DFF951EE1F84F00883A3C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A1DFFAE1EE1F84F00883A3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1A1DFFAF1EE1F84F00883A3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A1DFFB11EE1F84F00883A3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8F9A0272D45E6AF55D5EA5E /* Pods-traktfy.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = traktfy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.acme.traktfy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1A1DFFB21EE1F84F00883A3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED5D65A8C84C42F3F2DF69D4 /* Pods-traktfy.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = traktfy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.acme.traktfy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1A1DFFB41EE1F84F00883A3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = traktfyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.acme.traktfyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/traktfy.app/traktfy";
+			};
+			name = Debug;
+		};
+		1A1DFFB51EE1F84F00883A3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = traktfyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.acme.traktfyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/traktfy.app/traktfy";
+			};
+			name = Release;
+		};
+		1A1DFFB71EE1F84F00883A3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = traktfyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.acme.traktfyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = traktfy;
+			};
+			name = Debug;
+		};
+		1A1DFFB81EE1F84F00883A3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = traktfyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.acme.traktfyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = traktfy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A1DFF801EE1F84F00883A3C /* Build configuration list for PBXProject "traktfy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A1DFFAE1EE1F84F00883A3C /* Debug */,
+				1A1DFFAF1EE1F84F00883A3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A1DFFB01EE1F84F00883A3C /* Build configuration list for PBXNativeTarget "traktfy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A1DFFB11EE1F84F00883A3C /* Debug */,
+				1A1DFFB21EE1F84F00883A3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A1DFFB31EE1F84F00883A3C /* Build configuration list for PBXNativeTarget "traktfyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A1DFFB41EE1F84F00883A3C /* Debug */,
+				1A1DFFB51EE1F84F00883A3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A1DFFB61EE1F84F00883A3C /* Build configuration list for PBXNativeTarget "traktfyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A1DFFB71EE1F84F00883A3C /* Debug */,
+				1A1DFFB81EE1F84F00883A3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1A1DFF8F1EE1F84F00883A3C /* traktfy.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1A1DFF901EE1F84F00883A3C /* traktfy.xcdatamodel */,
+			);
+			currentVersion = 1A1DFF901EE1F84F00883A3C /* traktfy.xcdatamodel */;
+			path = traktfy.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1A1DFF7D1EE1F84F00883A3C /* Project object */;
+}

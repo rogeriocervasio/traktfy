@@ -27,7 +27,7 @@ public class BaseService: NSObject {
     
     public func startReachabilityMonitoring() {
         
-        self.baseAPI = self.baseAddress! + self.baseVersion!
+        self.baseAPI = self.baseAddress!
         self.reachabilityManager = NetworkReachabilityManager(host: self.baseAddress!)
         
         guard let reachabilityManager = self.reachabilityManager else {

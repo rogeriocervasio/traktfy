@@ -16,8 +16,8 @@ class MySeriesViewController: UITableViewController, NSFetchedResultsControllerD
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNewSeries(_:)))
-        self.navigationItem.rightBarButtonItem = addButton
+//        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNewSeries(_:)))
+//        self.navigationItem.rightBarButtonItem = addButton
         
         self.managedObjectContext = CoreDataStack.sharedInstance.persistentContainer.viewContext
 
@@ -28,9 +28,9 @@ class MySeriesViewController: UITableViewController, NSFetchedResultsControllerD
         // Dispose of any resources that can be recreated.
     }
 
-    func addNewSeries(_ sender: Any) {
-        //
-    }
+//    func addNewSeries(_ sender: Any) {
+//        //
+//    }
     
     // MARK: - Navigation
     
@@ -40,9 +40,9 @@ class MySeriesViewController: UITableViewController, NSFetchedResultsControllerD
             
             print("MySeriesViewController \(#function)")
             
-            let showDetailViewController = segue.destination as! ShowDetailViewController
+            let mySeriesDetailViewController = segue.destination as! MySeriesDetailViewController
             
-            showDetailViewController.showEntity = sender as? ShowEntity
+            mySeriesDetailViewController.showEntity = sender as? ShowEntity
         }
         
     }

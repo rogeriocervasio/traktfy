@@ -20,6 +20,9 @@
 		1A75E0131EEDE3E7003C7A59 /* SeasonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A75E0121EEDE3E7003C7A59 /* SeasonTableViewCell.swift */; };
 		1A76EAA71EEE39DB00B5DD1F /* show.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A76EAA61EEE39DB00B5DD1F /* show.json */; };
 		1A76EAA91EEEC1B300B5DD1F /* ShowObjectMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A76EAA81EEEC1B300B5DD1F /* ShowObjectMapperTests.swift */; };
+		1A76EAAB1EEEFC0700B5DD1F /* MySeriesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A76EAAA1EEEFC0600B5DD1F /* MySeriesDetailViewController.swift */; };
+		1A76EAAD1EEF193800B5DD1F /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A76EAAC1EEF193700B5DD1F /* EpisodesViewController.swift */; };
+		1A76EAAF1EEF32C300B5DD1F /* EpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A76EAAE1EEF32C300B5DD1F /* EpisodeTableViewCell.swift */; };
 		1ABEC1F11EEC6BDC0082BC86 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABEC1F01EEC6BDC0082BC86 /* SearchViewController.swift */; };
 		1ABEC1F31EEC6F670082BC86 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABEC1F21EEC6F670082BC86 /* SearchTableViewCell.swift */; };
 		1ABEC1F51EECBC540082BC86 /* ShowDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABEC1F41EECBC540082BC86 /* ShowDetailViewController.swift */; };
@@ -74,6 +77,9 @@
 		1A75E0121EEDE3E7003C7A59 /* SeasonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonTableViewCell.swift; sourceTree = "<group>"; };
 		1A76EAA61EEE39DB00B5DD1F /* show.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = show.json; sourceTree = "<group>"; };
 		1A76EAA81EEEC1B300B5DD1F /* ShowObjectMapperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowObjectMapperTests.swift; sourceTree = "<group>"; };
+		1A76EAAA1EEEFC0600B5DD1F /* MySeriesDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySeriesDetailViewController.swift; sourceTree = "<group>"; };
+		1A76EAAC1EEF193700B5DD1F /* EpisodesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodesViewController.swift; sourceTree = "<group>"; };
+		1A76EAAE1EEF32C300B5DD1F /* EpisodeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeTableViewCell.swift; sourceTree = "<group>"; };
 		1ABEC1F01EEC6BDC0082BC86 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		1ABEC1F21EEC6F670082BC86 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		1ABEC1F41EECBC540082BC86 /* ShowDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowDetailViewController.swift; sourceTree = "<group>"; };
@@ -153,10 +159,13 @@
 				1A1DFF881EE1F84F00883A3C /* AppDelegate.swift */,
 				1A1DFFB91EE20E9700883A3C /* MySeriesViewController.swift */,
 				1A3832941EEE14F900A10C1E /* MySeriesTableViewCell.swift */,
+				1A76EAAA1EEEFC0600B5DD1F /* MySeriesDetailViewController.swift */,
 				1ABEC1F01EEC6BDC0082BC86 /* SearchViewController.swift */,
 				1ABEC1F21EEC6F670082BC86 /* SearchTableViewCell.swift */,
 				1ABEC1F41EECBC540082BC86 /* ShowDetailViewController.swift */,
 				1A75E0121EEDE3E7003C7A59 /* SeasonTableViewCell.swift */,
+				1A76EAAC1EEF193700B5DD1F /* EpisodesViewController.swift */,
+				1A76EAAE1EEF32C300B5DD1F /* EpisodeTableViewCell.swift */,
 				1A1DFF8C1EE1F84F00883A3C /* Main.storyboard */,
 				1A1DFF941EE1F84F00883A3C /* LaunchScreen.storyboard */,
 				1A1DFF921EE1F84F00883A3C /* Assets.xcassets */,
@@ -497,6 +506,8 @@
 				1A3832951EEE14F900A10C1E /* MySeriesTableViewCell.swift in Sources */,
 				1ABEC1F11EEC6BDC0082BC86 /* SearchViewController.swift in Sources */,
 				1A75E0131EEDE3E7003C7A59 /* SeasonTableViewCell.swift in Sources */,
+				1A76EAAB1EEEFC0700B5DD1F /* MySeriesDetailViewController.swift in Sources */,
+				1A76EAAD1EEF193800B5DD1F /* EpisodesViewController.swift in Sources */,
 				1A33C94E1EEDBBEE00C970E4 /* Season.swift in Sources */,
 				1AF675011EEDF7750057D857 /* ShowEntity+CoreDataClass.swift in Sources */,
 				1A1DFF911EE1F84F00883A3C /* traktfy.xcdatamodeld in Sources */,
@@ -508,6 +519,7 @@
 				1ABEC1F51EECBC540082BC86 /* ShowDetailViewController.swift in Sources */,
 				1AF675001EEDF7750057D857 /* SeasonEntity+CoreDataProperties.swift in Sources */,
 				1AF675021EEDF7750057D857 /* ShowEntity+CoreDataProperties.swift in Sources */,
+				1A76EAAF1EEF32C300B5DD1F /* EpisodeTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

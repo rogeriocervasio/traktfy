@@ -38,6 +38,8 @@ class ShowDetailViewController: UIViewController, NSFetchedResultsControllerDele
         print("ShowDetailViewController \(#function) - \((self.show?.showTitle)!)")
         
         self.labelTitle.text = (self.show?.showTitle)!
+        self.labelYear.text = "\((self.show?.showYear)!)"
+        self.labelOverview.text = (self.show?.showOverview)!
         
         self.config()
     }
@@ -55,6 +57,7 @@ class ShowDetailViewController: UIViewController, NSFetchedResultsControllerDele
         if self.fetchShowByID(traktID: (self.show?.traktID)!) != nil {
             self.buttonFollow.isSelected = true
             self.buttonFollow.backgroundColor = #colorLiteral(red: 0.2176683843, green: 0.8194433451, blue: 0.2584097683, alpha: 1)
+            self.buttonFollow.setTitleColor(#colorLiteral(red: 0.2176683843, green: 0.8194433451, blue: 0.2584097683, alpha: 1), for: .selected)
             self.buttonFollow.isEnabled = false
         }
         
@@ -85,6 +88,7 @@ class ShowDetailViewController: UIViewController, NSFetchedResultsControllerDele
         
         self.buttonFollow.isSelected = true
         self.buttonFollow.backgroundColor = #colorLiteral(red: 0.2176683843, green: 0.8194433451, blue: 0.2584097683, alpha: 1)
+        self.buttonFollow.setTitleColor(#colorLiteral(red: 0.2176683843, green: 0.8194433451, blue: 0.2584097683, alpha: 1), for: .selected)
         self.buttonFollow.isEnabled = false
         
         //let newShow = NSEntityDescription.insertNewObject(forEntityName: "ShowEntity", into: self.managedObjectContext!) as? ShowEntity
@@ -121,6 +125,28 @@ class ShowDetailViewController: UIViewController, NSFetchedResultsControllerDele
         newShow.genres          = (self.show?.genres)!
         newShow.airedEpisodes   = Int32((self.show?.airedEpisodes)!)
         
+        if self.seasonArray.count > 0 {
+            for season in seasonArray {
+                
+                let newSeason = SeasonEntity(context: self.managedObjectContext!)
+                
+                newSeason.watched       = false
+                newSeason.showID        = Int32((self.show?.traktID)!)
+                newSeason.seasonNumber  = Int32(season.seasonNumber!)
+                newSeason.seasonID      = Int32(season.seasonID!)
+                newSeason.seasonTvdb    = (season.seasonTvdb != nil ? Int32(season.seasonTvdb!) : 0)
+                newSeason.seasonTmdb    = (season.seasonTmdb != nil ? Int32(season.seasonTmdb!) : 0)
+                newSeason.seasonTvrage  = (season.seasonTvrage != nil ? season.seasonTvrage! : nil)
+                newSeason.seasonRating  = season.seasonRating!
+                newSeason.seasonVotes   = Int32(season.seasonVotes!)
+                newSeason.episodeCount  = Int32(season.episodeCount!)
+                newSeason.airedEpisodes = Int32(season.airedEpisodes!)
+                newSeason.seasonTitle   = (season.seasonTitle != nil ? season.seasonTitle! : nil)
+                newSeason.seasonOverview = (season.seasonOverview != nil ? season.seasonOverview! : nil)
+                newSeason.firstAired    = (season.firstAired != nil ? season.firstAired! : nil)
+            }
+        }
+        
         do {
             try self.managedObjectContext?.save()
         } catch let error {
@@ -150,8 +176,8 @@ class ShowDetailViewController: UIViewController, NSFetchedResultsControllerDele
             if finished && seasons != nil {
                 
                 if (seasons?.count)! > 0 {
-                    
-                    self.seasonArray.append(contentsOf: seasons!)
+                    let filteredSeasons = seasons?.filter({ $0.seasonNumber! > 0})
+                    self.seasonArray.append(contentsOf: filteredSeasons!)
                     self.tableView.reloadData()
                     self.tableView.flashScrollIndicators()
                 }

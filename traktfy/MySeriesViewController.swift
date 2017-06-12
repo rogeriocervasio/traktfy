@@ -59,7 +59,7 @@ class MySeriesViewController: UITableViewController, NSFetchedResultsControllerD
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "mySeriesCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "mySeriesCell", for: indexPath) as! MySeriesTableViewCell
         let showEntity = self.fetchedResultsController.object(at: indexPath)
         self.configureCell(cell, withShow: showEntity)
         return cell
@@ -96,7 +96,9 @@ class MySeriesViewController: UITableViewController, NSFetchedResultsControllerD
     }
     
     func configureCell(_ cell: UITableViewCell, withShow showEntity: ShowEntity) {
-        cell.textLabel!.text = showEntity.showTitle?.description
+        let mySeries = cell as! MySeriesTableViewCell
+        mySeries.labelTitle.text = showEntity.showTitle?.description
+        //cell.textLabel!.text = showEntity.showTitle?.description
     }
     
     // MARK: - Fetched results controller

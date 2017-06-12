@@ -58,7 +58,7 @@ class SearchViewController: UIViewController {
             self.loadingMore = true
             self.page += 1
             
-            _ = Service.shared.getSearchedSeries(extendedOptions: "full", query: queryString, page: self.page) { (finished, show, message) in
+            _ = Service.shared.getSearchedSeries(extendedOptions: "full", query: queryString, page: self.page) { (finished, show) in
                 
                 if finished && show != nil {
                     
@@ -70,16 +70,6 @@ class SearchViewController: UIViewController {
                     }
                     
                 }
-//                else if !(message?.isEmpty)! {
-//
-//                    let alert = UIAlertController(title: "Error", message: message!, preferredStyle: .alert)
-//                    alert.addAction(
-//                        UIAlertAction(title: "OK", style: .default) { [weak self] _ in
-//                            self?.dismiss(animated: true, completion: nil)
-//                        }
-//                    )
-//                    self.present(alert, animated: true)
-//                }
                 
                 self.loadingMore = false
                 
@@ -112,7 +102,7 @@ extension SearchViewController: UITableViewDataSource {
         if (indexPath.row == self.showArray.count - 1 && !self.loadingMore) {
             if self.page == 0 {self.page = 1}
             print("SearchViewController \(#function) - getSearchResults() - page: \(self.page) - indexPath.row: \(indexPath.row) - pullArray.count: \(self.showArray.count)")
-            self.getSearchResults(queryString: searchBar.text!)
+            self.getSearchResults(queryString: self.searchTerm!)
         }
         
         return cell
@@ -146,10 +136,18 @@ extension SearchViewController: UISearchBarDelegate {
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         
         searchBar.resignFirstResponder()
+        
+        self.page = 0
+        self.showArray.removeAll()
+        self.tableView.reloadData()
     }
 
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
-        // searchBar.resignFirstResponder()
+        
+        self.page = 0
+        self.showArray.removeAll()
+        self.tableView.reloadData()
+        self.searchTerm = searchBar.text!
         
         self.getSearchResults(queryString: searchBar.text!)
         

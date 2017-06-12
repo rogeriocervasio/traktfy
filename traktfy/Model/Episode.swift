@@ -13,8 +13,9 @@ public class Episode: NSObject, Mappable {
     public var watched: Bool?
     public var showID: Int?
     public var seasonID: Int?
-    public var season: Int
-    public var number: Int
+    
+    public var season: Int?
+    public var number: Int?
     public var title: String?
     public var episodeID: Int?
     public var episodeTvdb: Int?
@@ -29,12 +30,9 @@ public class Episode: NSObject, Mappable {
     public var updatedAt: Date?
     public var availableTranslations: [String]?
     
-    
     required public override init() {}
     
-    
     required public init?(map: Map) {}
-    
     
     public func mapping(map: Map) {
         

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16F73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="EpisodeEntity" representedClassName="EpisodeEntity" syncable="YES" codeGenerationType="class">
+    <entity name="EpisodeEntity" representedClassName=".EpisodeEntity" syncable="YES">
+        <attribute name="availableTranslations" optional="YES" attributeType="Transformable" syncable="YES"/>
         <attribute name="episodeID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="episodeImdb" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="episodeOverview" optional="YES" attributeType="String" syncable="YES"/>
@@ -19,23 +20,23 @@
         <attribute name="votes" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="watched" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
     </entity>
-    <entity name="SeasonEntity" representedClassName="SeasonEntity" syncable="YES" codeGenerationType="class">
+    <entity name="SeasonEntity" representedClassName=".SeasonEntity" syncable="YES">
         <attribute name="airedEpisodes" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="episodeCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="firstAired" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
-        <attribute name="number" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="rating" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="seasonID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="seasonNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="seasonOverview" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="seasonRating" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="seasonTitle" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="seasonTmdb" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="seasonTvdb" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="seasonTvrage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="seasonVotes" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="showID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" indexed="YES" syncable="YES"/>
-        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="votes" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="watched" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
     </entity>
-    <entity name="ShowEntity" representedClassName="ShowEntity" syncable="YES" codeGenerationType="class">
+    <entity name="ShowEntity" representedClassName=".ShowEntity" syncable="YES">
         <attribute name="airedEpisodes" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="airsDay" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="airsTime" optional="YES" attributeType="String" syncable="YES"/>
@@ -67,8 +68,8 @@
         <attribute name="votes" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
     <elements>
-        <element name="ShowEntity" positionX="-63" positionY="-18" width="128" height="480"/>
+        <element name="EpisodeEntity" positionX="-54" positionY="126" width="128" height="315"/>
         <element name="SeasonEntity" positionX="-63" positionY="54" width="128" height="255"/>
-        <element name="EpisodeEntity" positionX="-54" positionY="126" width="128" height="300"/>
+        <element name="ShowEntity" positionX="-63" positionY="-18" width="128" height="480"/>
     </elements>
 </model>

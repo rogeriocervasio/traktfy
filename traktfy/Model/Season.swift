@@ -13,16 +13,16 @@ public class Season: NSObject, Mappable {
     public var watched: Bool?
     public var showID: Int?
     
-    public var number: Int?
+    public var seasonNumber: Int?
     public var seasonID: Int?
     public var seasonTvdb: Int?
     public var seasonTmdb: Int?
     public var seasonTvrage: String?
-    public var rating: Double?
-    public var votes: Int?
+    public var seasonRating: Double?
+    public var seasonVotes: Int?
     public var episodeCount: Int?
     public var airedEpisodes: Int?
-    public var title: String?
+    public var seasonTitle: String?
     public var seasonOverview: String?
     public var firstAired: Date?
     
@@ -32,16 +32,16 @@ public class Season: NSObject, Mappable {
     
     public func mapping(map: Map) {
         
-        self.number         <- map["number"]
+        self.seasonNumber   <- map["number"]
         self.seasonID       <- map["ids.trakt"]
         self.seasonTvdb     <- map["ids.tvdb"]
         self.seasonTmdb     <- map["ids.tmdb"]
         self.seasonTvrage   <- map["ids.tvrage"]
-        self.rating         <- map["rating"]
-        self.votes          <- map["votes"]
+        self.seasonRating   <- map["rating"]
+        self.seasonVotes    <- map["votes"]
         self.episodeCount   <- map["episode_count"]
         self.airedEpisodes  <- map["aired_episodes"]
-        self.title          <- map["title"]
+        self.seasonTitle    <- map["title"]
         self.seasonOverview <- map["overview"]
         self.firstAired     <- (map["first_aired"], ISO8601DateTransform())
     }

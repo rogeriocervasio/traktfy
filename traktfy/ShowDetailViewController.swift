@@ -97,12 +97,12 @@ class ShowDetailViewController: UIViewController, NSFetchedResultsControllerDele
         newShow.showYear   = Int16((self.show?.showYear)!)
         newShow.traktID    = Int32((self.show?.traktID)!)
         newShow.traktSlug  = (self.show?.traktSlug)!
-        newShow.traktImdb  = (self.show?.traktImdb)!
-        newShow.traktTmdb  = Int32((self.show?.traktTmdb)!)
+        newShow.traktImdb  = (self.show?.traktImdb != nil ? (self.show?.traktImdb)! : nil)
+        newShow.traktTmdb  = (self.show?.traktTmdb != nil ? Int32((self.show?.traktTmdb)!) : nil)!
         newShow.traktTvrage  = (self.show?.traktTvrage != nil ? (self.show?.traktTvrage)! : nil)
         newShow.showOverview = (self.show?.showOverview)!
         
-        newShow.firstAired      = (self.show?.firstAired)!
+        newShow.firstAired      = (self.show?.firstAired != nil ? (self.show?.firstAired)! : nil)
         newShow.airsDay         = (self.show?.airsDay)!
         newShow.airsTime        = (self.show?.airsTime)!
         newShow.airsTimezone    = (self.show?.airsTimezone)!
@@ -112,10 +112,10 @@ class ShowDetailViewController: UIViewController, NSFetchedResultsControllerDele
         newShow.country         = (self.show?.country)!
         newShow.trailer         = (self.show?.trailer != nil ? (self.show?.trailer)! : nil)
         newShow.homepage        = (self.show?.homepage != nil ? (self.show?.homepage)! : nil)
-        newShow.status          = (self.show?.status)!
+        newShow.status          = (self.show?.status != nil ? (self.show?.status)! : nil)
         newShow.rating          = (self.show?.rating)!
         newShow.votes           = Int32((self.show?.votes)!)
-        newShow.updatedAt       = (self.show?.updatedAt)!
+        newShow.updatedAt       = (self.show?.updatedAt != nil ? (self.show?.updatedAt)! : nil)
         newShow.language        = (self.show?.language)!
         newShow.availableTranslations = (self.show?.availableTranslations)!
         newShow.genres          = (self.show?.genres)!
@@ -179,8 +179,8 @@ extension ShowDetailViewController: UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "seasonCell", for: indexPath) as! SeasonTableViewCell
         
-        cell.labelSeason.text = "\(season.number ?? 0)"
-        cell.labelTitle.text = season.title
+        cell.labelSeason.text = "\(season.seasonNumber ?? 0)"
+        cell.labelTitle.text = season.seasonTitle
         cell.labelOverview.text = season.seasonOverview
         
         return cell
@@ -194,7 +194,7 @@ extension ShowDetailViewController: UITableViewDelegate {
         
         let season = self.seasonArray[indexPath.row]
         
-        print("ShowDetailViewController \(#function) - Title: \(String(describing: season.title!)) - showID: \(season.showID ?? 0)")
+        print("ShowDetailViewController \(#function) - Title: \(String(describing: season.seasonTitle!))")
         
         self.performSegue(withIdentifier: "segueShowDetail", sender: show)
     }

@@ -16,9 +16,10 @@
 		1A1DFFAC1EE1F84F00883A3C /* traktfyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1DFFAB1EE1F84F00883A3C /* traktfyUITests.swift */; };
 		1A1DFFBA1EE20E9700883A3C /* MySeriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1DFFB91EE20E9700883A3C /* MySeriesViewController.swift */; };
 		1A33C94E1EEDBBEE00C970E4 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A33C94D1EEDBBEE00C970E4 /* Season.swift */; };
-		1A33C9501EEDD3F400C970E4 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A33C94F1EEDD3F400C970E4 /* Episode.swift */; };
+		1A3832931EEDFB5200A10C1E /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3832921EEDFB5200A10C1E /* Episode.swift */; };
+		1A3832951EEE14F900A10C1E /* MySeriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3832941EEE14F900A10C1E /* MySeriesTableViewCell.swift */; };
 		1A75E0131EEDE3E7003C7A59 /* SeasonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A75E0121EEDE3E7003C7A59 /* SeasonTableViewCell.swift */; };
-		1ABEC1EF1EEC602E0082BC86 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABEC1EE1EEC602E0082BC86 /* BaseModel.swift */; };
+		1A76EAA71EEE39DB00B5DD1F /* show.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A76EAA61EEE39DB00B5DD1F /* show.json */; };
 		1ABEC1F11EEC6BDC0082BC86 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABEC1F01EEC6BDC0082BC86 /* SearchViewController.swift */; };
 		1ABEC1F31EEC6F670082BC86 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABEC1F21EEC6F670082BC86 /* SearchTableViewCell.swift */; };
 		1ABEC1F51EECBC540082BC86 /* ShowDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABEC1F41EECBC540082BC86 /* ShowDetailViewController.swift */; };
@@ -26,6 +27,12 @@
 		1AC4978D1EE7168D0061A40F /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC4978C1EE7168D0061A40F /* Service.swift */; };
 		1AC4978F1EE71AE90061A40F /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC4978E1EE71AE90061A40F /* Show.swift */; };
 		1AC497911EE8484A0061A40F /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC497901EE8484A0061A40F /* CoreDataStack.swift */; };
+		1AF674FD1EEDF7750057D857 /* EpisodeEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF674F71EEDF7750057D857 /* EpisodeEntity+CoreDataClass.swift */; };
+		1AF674FE1EEDF7750057D857 /* EpisodeEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF674F81EEDF7750057D857 /* EpisodeEntity+CoreDataProperties.swift */; };
+		1AF674FF1EEDF7750057D857 /* SeasonEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF674F91EEDF7750057D857 /* SeasonEntity+CoreDataClass.swift */; };
+		1AF675001EEDF7750057D857 /* SeasonEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF674FA1EEDF7750057D857 /* SeasonEntity+CoreDataProperties.swift */; };
+		1AF675011EEDF7750057D857 /* ShowEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF674FB1EEDF7750057D857 /* ShowEntity+CoreDataClass.swift */; };
+		1AF675021EEDF7750057D857 /* ShowEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF674FC1EEDF7750057D857 /* ShowEntity+CoreDataProperties.swift */; };
 		3FE08933D755627B2A3EF5CE /* Pods_traktfy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F76516F2637020134ABEA72 /* Pods_traktfy.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,9 +69,10 @@
 		1A1DFFAD1EE1F84F00883A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A1DFFB91EE20E9700883A3C /* MySeriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySeriesViewController.swift; sourceTree = "<group>"; };
 		1A33C94D1EEDBBEE00C970E4 /* Season.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Season.swift; path = Model/Season.swift; sourceTree = "<group>"; };
-		1A33C94F1EEDD3F400C970E4 /* Episode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Episode.swift; path = Model/Episode.swift; sourceTree = "<group>"; };
+		1A3832921EEDFB5200A10C1E /* Episode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Episode.swift; path = Model/Episode.swift; sourceTree = "<group>"; };
+		1A3832941EEE14F900A10C1E /* MySeriesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySeriesTableViewCell.swift; sourceTree = "<group>"; };
 		1A75E0121EEDE3E7003C7A59 /* SeasonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonTableViewCell.swift; sourceTree = "<group>"; };
-		1ABEC1EE1EEC602E0082BC86 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseModel.swift; path = Model/BaseModel.swift; sourceTree = "<group>"; };
+		1A76EAA61EEE39DB00B5DD1F /* show.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = show.json; sourceTree = "<group>"; };
 		1ABEC1F01EEC6BDC0082BC86 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		1ABEC1F21EEC6F670082BC86 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		1ABEC1F41EECBC540082BC86 /* ShowDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowDetailViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +80,12 @@
 		1AC4978C1EE7168D0061A40F /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Service.swift; path = Service/Service.swift; sourceTree = "<group>"; };
 		1AC4978E1EE71AE90061A40F /* Show.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Show.swift; path = Model/Show.swift; sourceTree = "<group>"; };
 		1AC497901EE8484A0061A40F /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		1AF674F71EEDF7750057D857 /* EpisodeEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "EpisodeEntity+CoreDataClass.swift"; path = "Data/EpisodeEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1AF674F81EEDF7750057D857 /* EpisodeEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "EpisodeEntity+CoreDataProperties.swift"; path = "Data/EpisodeEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1AF674F91EEDF7750057D857 /* SeasonEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SeasonEntity+CoreDataClass.swift"; path = "Data/SeasonEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1AF674FA1EEDF7750057D857 /* SeasonEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SeasonEntity+CoreDataProperties.swift"; path = "Data/SeasonEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1AF674FB1EEDF7750057D857 /* ShowEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ShowEntity+CoreDataClass.swift"; path = "Data/ShowEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1AF674FC1EEDF7750057D857 /* ShowEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ShowEntity+CoreDataProperties.swift"; path = "Data/ShowEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		6F76516F2637020134ABEA72 /* Pods_traktfy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_traktfy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8F9A0272D45E6AF55D5EA5E /* Pods-traktfy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-traktfy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-traktfy/Pods-traktfy.debug.xcconfig"; sourceTree = "<group>"; };
 		ED5D65A8C84C42F3F2DF69D4 /* Pods-traktfy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-traktfy.release.xcconfig"; path = "Pods/Target Support Files/Pods-traktfy/Pods-traktfy.release.xcconfig"; sourceTree = "<group>"; };
@@ -133,6 +147,7 @@
 				1A1DFFBB1EE20EDA00883A3C /* Data */,
 				1A1DFF881EE1F84F00883A3C /* AppDelegate.swift */,
 				1A1DFFB91EE20E9700883A3C /* MySeriesViewController.swift */,
+				1A3832941EEE14F900A10C1E /* MySeriesTableViewCell.swift */,
 				1ABEC1F01EEC6BDC0082BC86 /* SearchViewController.swift */,
 				1ABEC1F21EEC6F670082BC86 /* SearchTableViewCell.swift */,
 				1ABEC1F41EECBC540082BC86 /* ShowDetailViewController.swift */,
@@ -148,7 +163,8 @@
 		1A1DFF9F1EE1F84F00883A3C /* traktfyTests */ = {
 			isa = PBXGroup;
 			children = (
-				1A1DFFA01EE1F84F00883A3C /* traktfyTests.swift */,
+				1A76EAA41EEE395500B5DD1F /* Cases */,
+				1A76EAA51EEE395C00B5DD1F /* Data */,
 				1A1DFFA21EE1F84F00883A3C /* Info.plist */,
 			);
 			path = traktfyTests;
@@ -166,8 +182,30 @@
 		1A1DFFBB1EE20EDA00883A3C /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				1AF674F71EEDF7750057D857 /* EpisodeEntity+CoreDataClass.swift */,
+				1AF674F81EEDF7750057D857 /* EpisodeEntity+CoreDataProperties.swift */,
+				1AF674F91EEDF7750057D857 /* SeasonEntity+CoreDataClass.swift */,
+				1AF674FA1EEDF7750057D857 /* SeasonEntity+CoreDataProperties.swift */,
+				1AF674FB1EEDF7750057D857 /* ShowEntity+CoreDataClass.swift */,
+				1AF674FC1EEDF7750057D857 /* ShowEntity+CoreDataProperties.swift */,
 				1A1DFF8F1EE1F84F00883A3C /* traktfy.xcdatamodeld */,
 				1AC497901EE8484A0061A40F /* CoreDataStack.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		1A76EAA41EEE395500B5DD1F /* Cases */ = {
+			isa = PBXGroup;
+			children = (
+				1A1DFFA01EE1F84F00883A3C /* traktfyTests.swift */,
+			);
+			name = Cases;
+			sourceTree = "<group>";
+		};
+		1A76EAA51EEE395C00B5DD1F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1A76EAA61EEE39DB00B5DD1F /* show.json */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -176,9 +214,8 @@
 			isa = PBXGroup;
 			children = (
 				1AC4978E1EE71AE90061A40F /* Show.swift */,
-				1ABEC1EE1EEC602E0082BC86 /* BaseModel.swift */,
 				1A33C94D1EEDBBEE00C970E4 /* Season.swift */,
-				1A33C94F1EEDD3F400C970E4 /* Episode.swift */,
+				1A3832921EEDFB5200A10C1E /* Episode.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -329,6 +366,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A76EAA71EEE39DB00B5DD1F /* show.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,19 +433,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AC497911EE8484A0061A40F /* CoreDataStack.swift in Sources */,
+				1AF674FD1EEDF7750057D857 /* EpisodeEntity+CoreDataClass.swift in Sources */,
+				1AF674FE1EEDF7750057D857 /* EpisodeEntity+CoreDataProperties.swift in Sources */,
 				1AC4978F1EE71AE90061A40F /* Show.swift in Sources */,
+				1AF674FF1EEDF7750057D857 /* SeasonEntity+CoreDataClass.swift in Sources */,
 				1AC4978B1EE715E70061A40F /* BaseService.swift in Sources */,
+				1A3832951EEE14F900A10C1E /* MySeriesTableViewCell.swift in Sources */,
 				1ABEC1F11EEC6BDC0082BC86 /* SearchViewController.swift in Sources */,
 				1A75E0131EEDE3E7003C7A59 /* SeasonTableViewCell.swift in Sources */,
 				1A33C94E1EEDBBEE00C970E4 /* Season.swift in Sources */,
+				1AF675011EEDF7750057D857 /* ShowEntity+CoreDataClass.swift in Sources */,
 				1A1DFF911EE1F84F00883A3C /* traktfy.xcdatamodeld in Sources */,
 				1AC4978D1EE7168D0061A40F /* Service.swift in Sources */,
-				1A33C9501EEDD3F400C970E4 /* Episode.swift in Sources */,
 				1A1DFF891EE1F84F00883A3C /* AppDelegate.swift in Sources */,
-				1ABEC1EF1EEC602E0082BC86 /* BaseModel.swift in Sources */,
+				1A3832931EEDFB5200A10C1E /* Episode.swift in Sources */,
 				1A1DFFBA1EE20E9700883A3C /* MySeriesViewController.swift in Sources */,
 				1ABEC1F31EEC6F670082BC86 /* SearchTableViewCell.swift in Sources */,
 				1ABEC1F51EECBC540082BC86 /* ShowDetailViewController.swift in Sources */,
+				1AF675001EEDF7750057D857 /* SeasonEntity+CoreDataProperties.swift in Sources */,
+				1AF675021EEDF7750057D857 /* ShowEntity+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

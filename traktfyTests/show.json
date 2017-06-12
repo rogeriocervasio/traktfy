@@ -1,0 +1,486 @@
+[
+    {
+        "type": "show",
+        "score": 168.69261,
+        "show": {
+            "title": "The Bridge",
+            "year": 2011,
+            "ids": {
+                "trakt": 44768,
+                "slug": "the-bridge",
+                "tvdb": 252019,
+                "imdb": "tt1733785",
+                "tmdb": 45016,
+                "tvrage": null
+            },
+            "overview": "A body is found on the bridge from Malmö to Copenhagen causing a jurisdiction issue. Forced to work together, a Swedish and a Danish police detective are on the hunt for a killer.",
+            "first_aired": "2011-09-20T21:00:00.000Z",
+            "airs": {
+                "day": "Sunday",
+                "time": "21:00",
+                "timezone": "Europe/Copenhagen"
+            },
+            "runtime": 60,
+            "certification": "TV-MA",
+            "network": "SVT",
+            "country": "dk",
+            "trailer": "http://youtube.com/watch?v=256_XTAEWqY",
+            "homepage": "http://www.svt.se/bron/",
+            "status": "returning series",
+            "rating": 8.74226,
+            "votes": 1389,
+            "updated_at": "2017-05-16T10:38:09.000Z",
+            "language": "sv",
+            "available_translations": [
+                "bs",
+                "cs",
+                "da",
+                "de",
+                "en",
+                "es",
+                "fi",
+                "fr",
+                "hu",
+                "nl",
+                "pl",
+                "pt",
+                "ru",
+                "sv",
+                "uk",
+                "zh"
+            ],
+            "genres": [
+                "drama",
+                "crime"
+            ],
+            "aired_episodes": 30
+        }
+    },
+    {
+        "type": "show",
+        "score": 161.89145,
+        "show": {
+            "title": "The Bridge",
+            "year": 2013,
+            "ids": {
+                "trakt": 46861,
+                "slug": "the-bridge-2013",
+                "tvdb": 264085,
+                "imdb": "tt2406376",
+                "tmdb": 47141,
+                "tvrage": 33179
+            },
+            "overview": "A present-day crime thriller exploring the tensions on the US-Mexico border. When an American judge known for her anti-immigration views is found dead on the bridge connecting El Paso and Juarez, Sonya Cross from El Paso PD must work with her Mexican counterpart from Chihuahua State Police, Marco Ruiz, to catch a serial killer operating on both sides of the border. Marco understands the slippery politics of Mexican law enforcement, and while his police force slowly succumbs to the pressures and demands of the cartel, he's one of the last good men in the department. He's charming, but will do whatever it takes to get what he needs -- which doesn't sit well with Sonya, who has Asperger's and strictly follows rules and protocol.The case quickly pulls them into a string of murders on the border, a scene already consumed by illegal immigration, drug trafficking, violence and prostitution.",
+            "first_aired": "2013-07-10T07:00:00.000Z",
+            "airs": {
+                "day": null,
+                "time": null,
+                "timezone": "America/New_York"
+            },
+            "runtime": 45,
+            "certification": "TV-MA",
+            "network": "FX (US)",
+            "country": "us",
+            "trailer": null,
+            "homepage": null,
+            "status": "ended",
+            "rating": 7.52663,
+            "votes": 1333,
+            "updated_at": "2017-06-05T09:29:31.000Z",
+            "language": "en",
+            "available_translations": [
+                "bg",
+                "bs",
+                "de",
+                "en",
+                "es",
+                "fr",
+                "hu",
+                "it",
+                "pt",
+                "ro",
+                "ru",
+                "zh"
+            ],
+            "genres": [
+                "drama"
+            ],
+            "aired_episodes": 26
+        }
+    },
+    {
+        "type": "show",
+        "score": 7.736298,
+        "show": {
+            "title": "Arakawa under the Bridge",
+            "year": 2010,
+            "ids": {
+                "trakt": 35271,
+                "slug": "arakawa-under-the-bridge",
+                "tvdb": 143271,
+                "imdb": "tt1639471",
+                "tmdb": 35423,
+                "tvrage": 25620
+            },
+            "overview": "* Based on a seinen gag manga by Nakamura Hikaru serialised in Young GanGan.A young upper-class elite man, Ichinomiya \"Riku\" Kou, who has a policy of not ever wanting to be in debt to anyone, ends up owing his life to a strange girl, who rescues him. His saviour is Nino, a beautiful homeless girl, who believes that she is from the planet Venus and lives under the bridge by the Arakawa river. So the young man ends up living there too.",
+            "first_aired": "2010-04-04T00:00:00.000Z",
+            "airs": {
+                "day": null,
+                "time": null,
+                "timezone": "Asia/Tokyo"
+            },
+            "runtime": 25,
+            "certification": "TV-PG",
+            "network": "TV Tokyo",
+            "country": "jp",
+            "trailer": null,
+            "homepage": null,
+            "status": "ended",
+            "rating": 7.75824,
+            "votes": 91,
+            "updated_at": "2017-04-14T16:26:09.000Z",
+            "language": "ja",
+            "available_translations": [
+                "en",
+                "es",
+                "fr"
+            ],
+            "genres": [
+                "anime"
+            ],
+            "aired_episodes": 26
+        }
+    },
+    {
+        "type": "show",
+        "score": 4.007816,
+        "show": {
+            "title": "The Bridge",
+            "year": 2010,
+            "ids": {
+                "trakt": 18277,
+                "slug": "the-bridge-2010",
+                "tvdb": 140151,
+                "imdb": "tt1278016",
+                "tmdb": 18359,
+                "tvrage": null
+            },
+            "overview": "\"The Bridge\" is a police district which a includes a wealthy, upscale suburb and a lower-class, crime-plagued neighborhood, with the two separated by a highway bridge. Frank Leo, the newly elected police union head with an angry attitude and no patience for the corruption that permeates the force, does whatever is called for to protect the beat cops in Bridge District from the brass as they do a difficult an underappreciated job.",
+            "first_aired": "2010-03-05T08:00:00.000Z",
+            "airs": {
+                "day": "Friday",
+                "time": "21:00",
+                "timezone": "America/Toronto"
+            },
+            "runtime": 60,
+            "certification": null,
+            "network": "CTV",
+            "country": "ca",
+            "trailer": null,
+            "homepage": "http://shows.ctv.ca/TheBridge.aspx",
+            "status": "ended",
+            "rating": 6.78788,
+            "votes": 33,
+            "updated_at": "2017-03-09T09:30:28.000Z",
+            "language": "en",
+            "available_translations": [
+                "bs",
+                "cs",
+                "de",
+                "en",
+                "fr"
+            ],
+            "genres": [
+                "drama",
+                "action",
+                "adventure"
+            ],
+            "aired_episodes": 13
+        }
+    },
+    {
+        "type": "show",
+        "score": 0.5540992,
+        "show": {
+            "title": "Black Mirror",
+            "year": 2011,
+            "ids": {
+                "trakt": 41793,
+                "slug": "black-mirror",
+                "tvdb": 253463,
+                "imdb": "tt2085059",
+                "tmdb": 42009,
+                "tvrage": 30348
+            },
+            "overview": "A television anthology series that shows the dark side of life and technology.",
+            "first_aired": "2011-12-04T00:00:00.000Z",
+            "airs": {
+                "day": "Friday",
+                "time": "00:00",
+                "timezone": "Europe/London"
+            },
+            "runtime": 55,
+            "certification": "TV-MA",
+            "network": "Netflix",
+            "country": "gb",
+            "trailer": null,
+            "homepage": "https://www.netflix.com/title/70264888",
+            "status": "returning series",
+            "rating": 8.8119,
+            "votes": 7161,
+            "updated_at": "2017-06-11T09:32:01.000Z",
+            "language": "en",
+            "available_translations": [
+                "bs",
+                "cs",
+                "da",
+                "de",
+                "el",
+                "en",
+                "es",
+                "fr",
+                "he",
+                "hu",
+                "it",
+                "ko",
+                "nl",
+                "pl",
+                "pt",
+                "ro",
+                "ru",
+                "tr",
+                "uk",
+                "zh"
+            ],
+            "genres": [
+                "drama",
+                "fantasy",
+                "science-fiction"
+            ],
+            "aired_episodes": 12
+        }
+    },
+    {
+        "type": "show",
+        "score": 0.43292868,
+        "show": {
+            "title": "The Carrie Diaries",
+            "year": 2013,
+            "ids": {
+                "trakt": 45901,
+                "slug": "the-carrie-diaries",
+                "tvdb": 257454,
+                "imdb": "tt2056366",
+                "tmdb": 46157,
+                "tvrage": null
+            },
+            "overview": "Carrie Bradshaw is in her senior year of high school in the early 1980s. She asks her first questions about love, sex, friendship and family while navigating the worlds of high school and Manhattan.",
+            "first_aired": "2013-01-14T08:00:00.000Z",
+            "airs": {
+                "day": "Friday",
+                "time": "20:00",
+                "timezone": "America/New_York"
+            },
+            "runtime": 45,
+            "certification": "TV-14",
+            "network": "The CW",
+            "country": "us",
+            "trailer": null,
+            "homepage": null,
+            "status": "ended",
+            "rating": 7.49912,
+            "votes": 1142,
+            "updated_at": "2017-03-09T11:23:42.000Z",
+            "language": "fr",
+            "available_translations": [
+                "bs",
+                "cs",
+                "el",
+                "en",
+                "fr",
+                "pt"
+            ],
+            "genres": [
+                "comedy",
+                "drama"
+            ],
+            "aired_episodes": 26
+        }
+    },
+    {
+        "type": "show",
+        "score": 0.34005708,
+        "show": {
+            "title": "Arakawa Under the Bridge",
+            "year": 2011,
+            "ids": {
+                "trakt": 64356,
+                "slug": "arakawa-under-the-bridge-2011",
+                "tvdb": 251508,
+                "imdb": "tt1880452",
+                "tmdb": null,
+                "tvrage": null
+            },
+            "overview": "A television drama adaption of the popular manga/anime series.",
+            "first_aired": "2011-07-26T07:00:00.000Z",
+            "airs": {
+                "day": "Tuesday",
+                "time": "00:00",
+                "timezone": "Asia/Tokyo"
+            },
+            "runtime": 25,
+            "certification": null,
+            "network": "Tokyo Broadcasting System",
+            "country": "jp",
+            "trailer": null,
+            "homepage": null,
+            "status": "ended",
+            "rating": 7,
+            "votes": 4,
+            "updated_at": "2016-03-31T10:56:45.000Z",
+            "language": null,
+            "available_translations": [],
+            "genres": [
+                "comedy"
+            ],
+            "aired_episodes": 10
+        }
+    },
+    {
+        "type": "show",
+        "score": 0.24926408,
+        "show": {
+            "title": "Nash Bridges",
+            "year": 1996,
+            "ids": {
+                "trakt": 473,
+                "slug": "nash-bridges",
+                "tvdb": 70845,
+                "imdb": "tt0115285",
+                "tmdb": 474,
+                "tvrage": null
+            },
+            "overview": "Nash Bridges is an American television police drama that was created by Carlton Cuse. The show starred Don Johnson and Cheech Marin as two detectives with the San Francisco Police Department. Nash Bridges (Johnson) is Captain of the Special Investigations Unit (with offices aboard a siezed boat), a man-about-town, who drives around in a distinctive yellow 1971 Plymouth Barracuda ('The Cuda'). He has two ex-wives, many girlfriends and a young daughter (who eventually joins the police force) to keep him busy.  Joe Dominguez (Marin), Nash's partner and best friend is a affable Mexican-American, firmly under the thumb of his Swedish wife Inger, and always on the look out for ways to make money on the side. In fact the two set up their own Private Detective agency, while still working for SFPD. ",
+            "first_aired": "1996-03-29T00:00:00.000Z",
+            "airs": {
+                "day": "Friday",
+                "time": "21:00",
+                "timezone": "America/New_York"
+            },
+            "runtime": 60,
+            "certification": "TV-14",
+            "network": "CBS",
+            "country": "us",
+            "trailer": null,
+            "homepage": null,
+            "status": "ended",
+            "rating": 6.94805,
+            "votes": 77,
+            "updated_at": "2017-06-05T09:35:41.000Z",
+            "language": "en",
+            "available_translations": [
+                "bs",
+                "de",
+                "en",
+                "fr",
+                "hu",
+                "pt",
+                "ru"
+            ],
+            "genres": [
+                "drama",
+                "action",
+                "adventure"
+            ],
+            "aired_episodes": 122
+        }
+    },
+    {
+        "type": "show",
+        "score": 0.19256626,
+        "show": {
+            "title": "The Millers",
+            "year": 2013,
+            "ids": {
+                "trakt": 50996,
+                "slug": "the-millers",
+                "tvdb": 269644,
+                "imdb": "tt2737290",
+                "tmdb": 51320,
+                "tvrage": 35810
+            },
+            "overview": "Will Arnett stars as Nathan Miller, a recently divorced local roving news reporter looking forward to living the singles’ life until his parents’ marital problems unexpectedly derail his plans. After Nathan finally breaks the news of his divorce to his parents, Carol and Tom, his father is inspired to follow suit and stuns the family when he leaves his wife of 43 years.  Already in shock, Jack is even more aghast when his meddlesome mom decides to move in with him. Meanwhile, his absent-minded dad imposes upon Nathan’s sister, Debbie, her husband Adam and their daughter Mykayla. Nathan’s best friend and news cameraman, Ray, was excited to be Nathan’s wingman in the dating scene, but Carol manages to even cramp his style. Now, as Nathan and his sister settle in with their truly impossible parents, they both wonder just how long the aggravating adjustment period is going to last.",
+            "first_aired": "2013-10-03T00:00:00.000Z",
+            "airs": {
+                "day": "Thursday",
+                "time": "20:30",
+                "timezone": "America/New_York"
+            },
+            "runtime": 25,
+            "certification": "TV-14",
+            "network": "CBS",
+            "country": "us",
+            "trailer": null,
+            "homepage": "http://www.cbs.com/shows/the-millers/",
+            "status": "ended",
+            "rating": 6.36279,
+            "votes": 430,
+            "updated_at": "2017-06-07T10:25:25.000Z",
+            "language": "en",
+            "available_translations": [
+                "bg",
+                "bs",
+                "cs",
+                "de",
+                "en",
+                "es",
+                "hu",
+                "pt",
+                "ro"
+            ],
+            "genres": [
+                "comedy"
+            ],
+            "aired_episodes": 34
+        }
+    },
+    {
+        "type": "show",
+        "score": 0.17002854,
+        "show": {
+            "title": "Pokémon: The 'Bridged Series",
+            "year": 2010,
+            "ids": {
+                "trakt": 81754,
+                "slug": "pokemon-the-bridged-series",
+                "tvdb": 283973,
+                "imdb": null,
+                "tmdb": null,
+                "tvrage": null
+            },
+            "overview": "Pokémon: The 'Bridged Series has been described as \"absurd\". This may be an understatement. Basically, we've taken the idea of \"Abridging\", copied it completely, and then did something slightly different. And applied it to Pokémon. It's a shorter, and hopefully funnier, version of Pokémon, produced by fans of the original in an attempt to make other fans laugh.",
+            "first_aired": "2010-03-05T08:00:00.000Z",
+            "airs": {
+                "day": null,
+                "time": null,
+                "timezone": "Europe/London"
+            },
+            "runtime": 8,
+            "certification": null,
+            "network": "YouTube",
+            "country": null,
+            "trailer": null,
+            "homepage": null,
+            "status": "returning series",
+            "rating": 8.5,
+            "votes": 2,
+            "updated_at": "2017-02-16T11:03:44.000Z",
+            "language": null,
+            "available_translations": [],
+            "genres": [
+                "comedy"
+            ],
+            "aired_episodes": 26
+        }
+    }
+]

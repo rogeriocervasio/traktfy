@@ -29,10 +29,7 @@ public class Service: BaseService {
         
         self.startReachabilityMonitoring()
     }
-    
-    func responseMessage(_ object:AnyObject?) -> String {
-        return (object?["message"] != nil ? (object?["message"] as? String)! : "")
-    }
+
     
     // GET https://api.trakt.tv/shows/44768/seasons/1?extended=full
     
@@ -57,7 +54,7 @@ public class Service: BaseService {
     }
  
     
-    public func getSearchedSeries(extendedOptions: String, query: String, page: Int, completion: ((_ finished: Bool, _ show: [Show]?, _ message: String?) -> Void)? = nil) -> Request {
+    public func getSearchedSeries(extendedOptions: String, query: String, page: Int, completion: ((_ finished: Bool, _ show: [Show]?) -> Void)? = nil) -> Request {
         //  GET https://api.trakt.tv/search/show?extended=full&query=thebridge&page=1
         
         let parameters = ["extended": extendedOptions, "query": query, "page": page] as [String : Any]
@@ -66,16 +63,12 @@ public class Service: BaseService {
             
             var show: [Show]?
             
-            var message: String?
-            
             if finished {
-                
-                message = self.responseMessage(response)
                 
                 show = Mapper<Show>().mapArray(JSONObject: response)
             }
             
-            completion?(finished, show, message)
+            completion?(finished, show)
         }
     }
 

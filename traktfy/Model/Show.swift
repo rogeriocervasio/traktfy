@@ -47,34 +47,38 @@ public class Show: NSObject, Mappable {
     
     public func mapping(map: Map) {
         
-        self.type <- map["type"]
-        self.score <- map["score"]
-        self.showTitle <- map["show.title"]
-        self.showYear <- map["show.year"]
-        self.traktID <- map["show.ids.trakt"]
-        self.traktSlug <- map["show.ids.slug"]
-        self.traktImdb <- map["show.ids.imdb"]
-        self.traktTmdb <- map["show.ids.tmdb"]
-        self.traktTvrage <- map["show.ids.tvrage"]
-        self.showOverview <- map["show.overview"]
-        self.firstAired     <- (map["first_aired"], ISO8601DateTransform())
-        self.airsDay        <- map["airs.day"]
-        self.airsTime       <- map["airs.time"]
-        self.airsTimezone   <- map["airs.timezone"]
-        self.runtime        <- map["runtime"]
-        self.certification  <- map["certification"]
-        self.network        <- map["network"]
-        self.country        <- map["country"]
-        self.trailer        <- map["trailer"]
-        self.homepage       <- map["homepage"]
-        self.status         <- map["status"]
-        self.rating         <- map["rating"]
-        self.votes          <- map["votes"]
-        self.updatedAt      <- (map["updated_at"], ISO8601DateTransform())
-        self.language       <- map["language"]
-        self.availableTranslations <- map["available_translations"]
-        self.genres         <- map["genres"]
-        self.airedEpisodes  <- map["aired_episodes"]
+        self.type           <- map["type"]
+        self.score          <- map["score"]
+        self.showTitle      <- map["show.title"]
+        self.showYear       <- map["show.year"]
+        self.traktID        <- map["show.ids.trakt"]
+        self.traktSlug      <- map["show.ids.slug"]
+        self.traktImdb      <- map["show.ids.imdb"]
+        self.traktTmdb      <- map["show.ids.tmdb"]
+        self.traktTvrage    <- map["show.ids.tvrage"]
+        self.showOverview   <- map["show.overview"]
+        //self.firstAired     <- (map["show.first_aired"], ISO8601DateTransform())
+        
+        self.firstAired     <- (map["show.first_aired"], CustomDateFormatTransform(formatString: "yyyy-MM-dd'T'HH:mm:ss.SSSZ"))
+
+        self.airsDay        <- map["show.airs.day"]
+        self.airsTime       <- map["show.airs.time"]
+        self.airsTimezone   <- map["show.airs.timezone"]
+        self.runtime        <- map["show.runtime"]
+        self.certification  <- map["show.certification"]
+        self.network        <- map["show.network"]
+        self.country        <- map["show.country"]
+        self.trailer        <- map["show.trailer"]
+        self.homepage       <- map["show.homepage"]
+        self.status         <- map["show.status"]
+        self.rating         <- map["show.rating"]
+        self.votes          <- map["show.votes"]
+        //self.updatedAt      <- (map["show.updated_at"], ISO8601DateTransform())
+        self.updatedAt      <- (map["show.updated_at"], CustomDateFormatTransform(formatString: "yyyy-MM-dd'T'HH:mm:ss.SSSZ"))
+        self.language       <- map["show.language"]
+        self.availableTranslations <- map["show.available_translations"]
+        self.genres         <- map["show.genres"]
+        self.airedEpisodes  <- map["show.aired_episodes"]
     }
 }
 /*

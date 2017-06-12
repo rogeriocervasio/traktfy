@@ -10,7 +10,11 @@ target 'traktfy' do
   pod 'AlamofireImage'
   pod 'AlamofireNetworkActivityIndicator'
   pod 'ObjectMapper'
-  
+
+    target 'traktfyTests' do
+        pod 'Alamofire'
+        pod 'ObjectMapper'
+    end
 end
 
 post_install do |installer|

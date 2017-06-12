@@ -12,7 +12,6 @@
 		1A1DFF911EE1F84F00883A3C /* traktfy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A1DFF8F1EE1F84F00883A3C /* traktfy.xcdatamodeld */; };
 		1A1DFF931EE1F84F00883A3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A1DFF921EE1F84F00883A3C /* Assets.xcassets */; };
 		1A1DFF961EE1F84F00883A3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A1DFF941EE1F84F00883A3C /* LaunchScreen.storyboard */; };
-		1A1DFFA11EE1F84F00883A3C /* traktfyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1DFFA01EE1F84F00883A3C /* traktfyTests.swift */; };
 		1A1DFFAC1EE1F84F00883A3C /* traktfyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1DFFAB1EE1F84F00883A3C /* traktfyUITests.swift */; };
 		1A1DFFBA1EE20E9700883A3C /* MySeriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1DFFB91EE20E9700883A3C /* MySeriesViewController.swift */; };
 		1A33C94E1EEDBBEE00C970E4 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A33C94D1EEDBBEE00C970E4 /* Season.swift */; };
@@ -20,6 +19,7 @@
 		1A3832951EEE14F900A10C1E /* MySeriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3832941EEE14F900A10C1E /* MySeriesTableViewCell.swift */; };
 		1A75E0131EEDE3E7003C7A59 /* SeasonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A75E0121EEDE3E7003C7A59 /* SeasonTableViewCell.swift */; };
 		1A76EAA71EEE39DB00B5DD1F /* show.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A76EAA61EEE39DB00B5DD1F /* show.json */; };
+		1A76EAA91EEEC1B300B5DD1F /* ShowObjectMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A76EAA81EEEC1B300B5DD1F /* ShowObjectMapperTests.swift */; };
 		1ABEC1F11EEC6BDC0082BC86 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABEC1F01EEC6BDC0082BC86 /* SearchViewController.swift */; };
 		1ABEC1F31EEC6F670082BC86 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABEC1F21EEC6F670082BC86 /* SearchTableViewCell.swift */; };
 		1ABEC1F51EECBC540082BC86 /* ShowDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABEC1F41EECBC540082BC86 /* ShowDetailViewController.swift */; };
@@ -34,6 +34,7 @@
 		1AF675011EEDF7750057D857 /* ShowEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF674FB1EEDF7750057D857 /* ShowEntity+CoreDataClass.swift */; };
 		1AF675021EEDF7750057D857 /* ShowEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF674FC1EEDF7750057D857 /* ShowEntity+CoreDataProperties.swift */; };
 		3FE08933D755627B2A3EF5CE /* Pods_traktfy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F76516F2637020134ABEA72 /* Pods_traktfy.framework */; };
+		7CA25B9A41791F93A3BC4BF6 /* Pods_traktfy_traktfyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B8E5BB5ECDA0EAD5559A7A /* Pods_traktfy_traktfyTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +63,6 @@
 		1A1DFF951EE1F84F00883A3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A1DFF971EE1F84F00883A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A1DFF9C1EE1F84F00883A3C /* traktfyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = traktfyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A1DFFA01EE1F84F00883A3C /* traktfyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = traktfyTests.swift; sourceTree = "<group>"; };
 		1A1DFFA21EE1F84F00883A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A1DFFA71EE1F84F00883A3C /* traktfyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = traktfyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A1DFFAB1EE1F84F00883A3C /* traktfyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = traktfyUITests.swift; sourceTree = "<group>"; };
@@ -73,6 +73,7 @@
 		1A3832941EEE14F900A10C1E /* MySeriesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySeriesTableViewCell.swift; sourceTree = "<group>"; };
 		1A75E0121EEDE3E7003C7A59 /* SeasonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonTableViewCell.swift; sourceTree = "<group>"; };
 		1A76EAA61EEE39DB00B5DD1F /* show.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = show.json; sourceTree = "<group>"; };
+		1A76EAA81EEEC1B300B5DD1F /* ShowObjectMapperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowObjectMapperTests.swift; sourceTree = "<group>"; };
 		1ABEC1F01EEC6BDC0082BC86 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		1ABEC1F21EEC6F670082BC86 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		1ABEC1F41EECBC540082BC86 /* ShowDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowDetailViewController.swift; sourceTree = "<group>"; };
@@ -87,7 +88,10 @@
 		1AF674FB1EEDF7750057D857 /* ShowEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ShowEntity+CoreDataClass.swift"; path = "Data/ShowEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		1AF674FC1EEDF7750057D857 /* ShowEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ShowEntity+CoreDataProperties.swift"; path = "Data/ShowEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		6F76516F2637020134ABEA72 /* Pods_traktfy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_traktfy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93B8E5BB5ECDA0EAD5559A7A /* Pods_traktfy_traktfyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_traktfy_traktfyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7AD22CB33E297186CD239CB /* Pods-traktfy-traktfyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-traktfy-traktfyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-traktfy-traktfyTests/Pods-traktfy-traktfyTests.release.xcconfig"; sourceTree = "<group>"; };
 		C8F9A0272D45E6AF55D5EA5E /* Pods-traktfy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-traktfy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-traktfy/Pods-traktfy.debug.xcconfig"; sourceTree = "<group>"; };
+		D9331EB4BCB4413C4F73AFAF /* Pods-traktfy-traktfyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-traktfy-traktfyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-traktfy-traktfyTests/Pods-traktfy-traktfyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED5D65A8C84C42F3F2DF69D4 /* Pods-traktfy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-traktfy.release.xcconfig"; path = "Pods/Target Support Files/Pods-traktfy/Pods-traktfy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CA25B9A41791F93A3BC4BF6 /* Pods_traktfy_traktfyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +202,7 @@
 		1A76EAA41EEE395500B5DD1F /* Cases */ = {
 			isa = PBXGroup;
 			children = (
-				1A1DFFA01EE1F84F00883A3C /* traktfyTests.swift */,
+				1A76EAA81EEEC1B300B5DD1F /* ShowObjectMapperTests.swift */,
 			);
 			name = Cases;
 			sourceTree = "<group>";
@@ -234,6 +239,8 @@
 			children = (
 				C8F9A0272D45E6AF55D5EA5E /* Pods-traktfy.debug.xcconfig */,
 				ED5D65A8C84C42F3F2DF69D4 /* Pods-traktfy.release.xcconfig */,
+				D9331EB4BCB4413C4F73AFAF /* Pods-traktfy-traktfyTests.debug.xcconfig */,
+				B7AD22CB33E297186CD239CB /* Pods-traktfy-traktfyTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -242,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				6F76516F2637020134ABEA72 /* Pods_traktfy.framework */,
+				93B8E5BB5ECDA0EAD5559A7A /* Pods_traktfy_traktfyTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -273,9 +281,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A1DFFB31EE1F84F00883A3C /* Build configuration list for PBXNativeTarget "traktfyTests" */;
 			buildPhases = (
+				FF495B827E60F92B9BA3FD82 /* [CP] Check Pods Manifest.lock */,
 				1A1DFF981EE1F84F00883A3C /* Sources */,
 				1A1DFF991EE1F84F00883A3C /* Frameworks */,
 				1A1DFF9A1EE1F84F00883A3C /* Resources */,
+				E394A245B5AFC499801FBCEE /* [CP] Embed Pods Frameworks */,
+				9B4B93D99F6685D097492E94 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -410,6 +421,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-traktfy/Pods-traktfy-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9B4B93D99F6685D097492E94 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-traktfy-traktfyTests/Pods-traktfy-traktfyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E394A245B5AFC499801FBCEE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-traktfy-traktfyTests/Pods-traktfy-traktfyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E7E718B9576F06FCB94FDF6B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -423,6 +464,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-traktfy/Pods-traktfy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF495B827E60F92B9BA3FD82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -459,7 +515,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A1DFFA11EE1F84F00883A3C /* traktfyTests.swift in Sources */,
+				1A76EAA91EEEC1B300B5DD1F /* ShowObjectMapperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,6 +685,7 @@
 		};
 		1A1DFFB41EE1F84F00883A3C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9331EB4BCB4413C4F73AFAF /* Pods-traktfy-traktfyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -643,6 +700,7 @@
 		};
 		1A1DFFB51EE1F84F00883A3C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7AD22CB33E297186CD239CB /* Pods-traktfy-traktfyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

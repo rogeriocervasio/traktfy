@@ -26,7 +26,8 @@
 		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52E8D4DCDB16ABF3FC2D403DA22CEB4 /* TaskDelegate.swift */; };
 		37D7FFC8B873CCBBC84E0912840FC2FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9B2E024A80A62FE090406312870D33 /* Foundation.framework */; };
 		37F951F2BDB75BD682C2999EB7B51A35 /* AlamofireImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 788461FB4370D0E71388D50550A6D4CB /* AlamofireImage-dummy.m */; };
-		4670278F9F2220956A546BD5E6EC1478 /* Pods-traktfy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5023206E38A0D8218810EDD571D6F11D /* Pods-traktfy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BE90E18B4D550CF038B7C58354955BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9B2E024A80A62FE090406312870D33 /* Foundation.framework */; };
+		4670278F9F2220956A546BD5E6EC1478 /* Pods-traktfy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 59FE648EE5B70BA75CA809F7DCF1DBE2 /* Pods-traktfy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A686B24A6E57B30E0813CC86B2BCEC4 /* NSDecimalNumberTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = B506BA3EDFAA77111A7FD3C7C4FFF5B9 /* NSDecimalNumberTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4176683447BFFD3893591CCF18C46D97 /* Request.swift */; };
 		554024125BDDD8CFE0FA9F47CF450D38 /* FromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A0BDD92F5C0D900C1FBC8264A489E6 /* FromJSON.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -36,13 +37,15 @@
 		64C08047F018142FFAA2D6A8EAD6CEF0 /* EnumOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913AA9F6000E91E51813955DE2F210CC /* EnumOperators.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6D4763209A3F094E8162FD1A86751B8D /* MapError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02015D0ACA52A2F8AA8A7EBC4AA25086 /* MapError.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		714BD67B41EEBEAC20CB958A882DE0AD /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E48E39774CFF79341937824E8C7031 /* Mappable.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		77B412CAAF1D9573193717E59F6C4ECE /* Pods-traktfy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A3F7E87EEFB789867C05E9BE93448B /* Pods-traktfy-dummy.m */; };
+		77B412CAAF1D9573193717E59F6C4ECE /* Pods-traktfy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA45F1428A784D073647DF073984FB92 /* Pods-traktfy-dummy.m */; };
+		7AE75417C5F229C84889A8912D57FB46 /* Pods-traktfy-traktfyTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC044950227A228171C88BCA42B33A0 /* Pods-traktfy-traktfyTests-dummy.m */; };
 		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B37DC4A7CDCEBEB4E27F6E8F9A9B9D2 /* SessionDelegate.swift */; };
 		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C4F6856F65D1EB020D3F2FAF3CAE9 /* Result.swift */; };
 		80DD3BF9141268B7FD837C9EAFD1207B /* DictionaryTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = A708EE3E764A19353C1C45BC31652601 /* DictionaryTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		82CC59765FCF6BB742B83109450663A7 /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284B497E3804DA398866163F2B7405AC /* TransformOf.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		87D83CACE21C33DCBCD33C6461646EE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9B2E024A80A62FE090406312870D33 /* Foundation.framework */; };
 		89237C6F5FD5E992915906EB96C5E5EC /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 706C7AFFE37BA158C3553250F4B5FAED /* Alamofire.framework */; };
+		8D4C7C8009476F5E685F42AF224EDF11 /* Pods-traktfy-traktfyTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E4652238C11E428EF537263A02D665D /* Pods-traktfy-traktfyTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9EA52AEB7278984474CC743711FCB699 /* TransformOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804527B8C323AF8CC1042F50ABA75B7 /* TransformOperators.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812172D07A2FB8A273896B36B9009997 /* AFError.swift */; };
 		A04BFC558D69E7DBB68023C80A9CFE4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9B2E024A80A62FE090406312870D33 /* Foundation.framework */; };
@@ -84,6 +87,13 @@
 			remoteGlobalIDString = 115FA0D867E07C04838493890DBD8D29;
 			remoteInfo = AlamofireNetworkActivityIndicator;
 		};
+		1643ECEAF79FA80BA0BD12A17813FB29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD6C9FB6B052E1CF663F8A56041EA163;
+			remoteInfo = ObjectMapper;
+		};
 		2560B00946508E395387B75D3C86EF55 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -98,7 +108,21 @@
 			remoteGlobalIDString = CD6C9FB6B052E1CF663F8A56041EA163;
 			remoteInfo = ObjectMapper;
 		};
+		640D447695C10AF881CE243701FDE79D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EFE4C70245EE2857D336B8B9FA4E825;
+			remoteInfo = AlamofireImage;
+		};
 		A1758AA696D56310AA192B587162169A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
+			remoteInfo = Alamofire;
+		};
+		A80F7E239554B241CC9E41579BD95C89 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -119,104 +143,130 @@
 			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
 			remoteInfo = Alamofire;
 		};
+		D0C036BECB65DEE17B4BCEF7D7C469D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 115FA0D867E07C04838493890DBD8D29;
+			remoteInfo = AlamofireNetworkActivityIndicator;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		018478D0E8FF767C7C2DA8FA6AD2B22A /* Pods_traktfy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_traktfy.framework; path = "Pods-traktfy.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01E106D6A0F9BA51D62E7BF0AC599DCC /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		02015D0ACA52A2F8AA8A7EBC4AA25086 /* MapError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MapError.swift; path = Sources/MapError.swift; sourceTree = "<group>"; };
 		02E80BD4DADEAF45CA88B7F46035B15B /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		0314A8AE9CB179A67422D70F602669AF /* ObjectMapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ObjectMapper.modulemap; sourceTree = "<group>"; };
 		0456CEF50CD9E86EF56FE6644D2BD23E /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		06699CEE2EA28893763678E84F8C6EDF /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/Operators.swift; sourceTree = "<group>"; };
+		06CBD024790969F1A54830730ACB7D68 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A65C7CADF4990D458C4E8D66901478B /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		0F8C7CCE4D5F65A3442DD4E5161789F6 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		114F6A4F751A821641F2591450C27E73 /* Pods-traktfy-traktfyTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-traktfy-traktfyTests.modulemap"; sourceTree = "<group>"; };
 		13434BB2A99E7778DAE8249559E9A78D /* AlamofireImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireImage-prefix.pch"; sourceTree = "<group>"; };
-		172B6D492388382EF7D60B004627C8BC /* Pods-traktfy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-traktfy.debug.xcconfig"; sourceTree = "<group>"; };
 		19FB6F7868A9A27B98B7A986D0AF7EF2 /* AlamofireNetworkActivityIndicator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AlamofireNetworkActivityIndicator.modulemap; sourceTree = "<group>"; };
 		1BE0A7115BFE9AFAF9B75C2E771543A0 /* Mapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mapper.swift; path = Sources/Mapper.swift; sourceTree = "<group>"; };
 		1BE6D1DC5D07051594CEAC7D50082E6A /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		20FB0C2935148AAB82D60DC0E9919205 /* Pods-traktfy-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-traktfy-acknowledgements.plist"; sourceTree = "<group>"; };
-		24DD78C1CA2BEAC70055B6C2C55C491B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		26893538BFDDA5310AA9A2888394081F /* Pods-traktfy-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-traktfy-acknowledgements.markdown"; sourceTree = "<group>"; };
 		26AEFB00BEE9A030C8E5AFF0F8C3711D /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		27A32DC552D8A082B8921685D5972C27 /* AlamofireNetworkActivityIndicator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AlamofireNetworkActivityIndicator.framework; path = AlamofireNetworkActivityIndicator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		284B497E3804DA398866163F2B7405AC /* TransformOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOf.swift; path = Sources/TransformOf.swift; sourceTree = "<group>"; };
-		284CBE5D212952BC590E8406F9394581 /* Pods_traktfy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_traktfy.framework; path = "Pods-traktfy.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3074A3348F7E597A68EE75AB11705354 /* AlamofireNetworkActivityIndicator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireNetworkActivityIndicator-prefix.pch"; sourceTree = "<group>"; };
 		3436DE38AD3F39E084F6EA0E2C206F8F /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Source/ImageCache.swift; sourceTree = "<group>"; };
 		397900D74799B82F44FC0FFB489391AF /* UIImage+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+AlamofireImage.swift"; path = "Source/UIImage+AlamofireImage.swift"; sourceTree = "<group>"; };
 		3C1F6D05051CC37BAC9EF1E294C348CF /* HexColorTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexColorTransform.swift; path = Sources/HexColorTransform.swift; sourceTree = "<group>"; };
 		3F9B2E024A80A62FE090406312870D33 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		415B7B4CB1DA65672B643EDFC961E2B4 /* Pods-traktfy-traktfyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-traktfy-traktfyTests.release.xcconfig"; sourceTree = "<group>"; };
 		4176683447BFFD3893591CCF18C46D97 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		42E18F0706B0B55FBF49F9540BD20A63 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		44D3DACE9FDA52A8B4CD8F8304618395 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46DA2BBF8F25DB466DDAED2A3136B845 /* AlamofireNetworkActivityIndicator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlamofireNetworkActivityIndicator-dummy.m"; sourceTree = "<group>"; };
 		4727BEF8896746A0D70D1F7DE35341E5 /* ObjectMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ObjectMapper-dummy.m"; sourceTree = "<group>"; };
 		47A0BDD92F5C0D900C1FBC8264A489E6 /* FromJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FromJSON.swift; path = Sources/FromJSON.swift; sourceTree = "<group>"; };
-		48AFF15FC3093A6B8D383AF251B3A82E /* Pods-traktfy-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-traktfy-frameworks.sh"; sourceTree = "<group>"; };
 		4B232CC41D359BD5A4B21B52624A2037 /* ImageFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageFilter.swift; path = Source/ImageFilter.swift; sourceTree = "<group>"; };
 		4B37DC4A7CDCEBEB4E27F6E8F9A9B9D2 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		4CD379073E9963F5DC02E08833CDEABB /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ObjectMapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D64437BAE650EA77EC7A04B6BA82514 /* UIButton+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+AlamofireImage.swift"; path = "Source/UIButton+AlamofireImage.swift"; sourceTree = "<group>"; };
-		5023206E38A0D8218810EDD571D6F11D /* Pods-traktfy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-traktfy-umbrella.h"; sourceTree = "<group>"; };
+		4F819998B11EC1F39D90C3611D0FCBB1 /* Pods-traktfy-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-traktfy-acknowledgements.markdown"; sourceTree = "<group>"; };
+		50B9467B3CFC79596BE119995605842A /* Pods-traktfy-traktfyTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-traktfy-traktfyTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		515017256B31E16379CC6086AF5DB445 /* UIImageView+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+AlamofireImage.swift"; path = "Source/UIImageView+AlamofireImage.swift"; sourceTree = "<group>"; };
 		53F451979F8256D43185876B750FC204 /* AlamofireNetworkActivityIndicator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireNetworkActivityIndicator-umbrella.h"; sourceTree = "<group>"; };
 		54C68D861D5CB40779175D6BFF98CC7E /* URLTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLTransform.swift; path = Sources/URLTransform.swift; sourceTree = "<group>"; };
 		56C1BA423332CF85E6CEB4C2A2B4A069 /* AlamofireNetworkActivityIndicator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlamofireNetworkActivityIndicator.xcconfig; sourceTree = "<group>"; };
+		59FE648EE5B70BA75CA809F7DCF1DBE2 /* Pods-traktfy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-traktfy-umbrella.h"; sourceTree = "<group>"; };
 		5C6290F6847D04933812AB1EE5582F3F /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
 		6021EF3F55FDC71068D3ED87F3B39EF7 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		632C4F6856F65D1EB020D3F2FAF3CAE9 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
 		649308ADC94BEE6F18C3DD271B84860A /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		6A82A926CD488917FE1888877CA2003F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C938D41DCF5A00A2AA34A1C9967CD8C /* Pods_traktfy_traktfyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_traktfy_traktfyTests.framework; path = "Pods-traktfy-traktfyTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DF5D21AF3CF20A96830284ADE9EE88B /* ObjectMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-prefix.pch"; sourceTree = "<group>"; };
 		6FFCE4AAB6F349B454FE4E35B3EA22AC /* ObjectMapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-umbrella.h"; sourceTree = "<group>"; };
 		706C7AFFE37BA158C3553250F4B5FAED /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71608F2C8BCC07EF2388E2D7643029F3 /* ToJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToJSON.swift; path = Sources/ToJSON.swift; sourceTree = "<group>"; };
-		781D792F3FF02104785A977F25C7A63D /* Pods-traktfy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-traktfy.release.xcconfig"; sourceTree = "<group>"; };
+		77404B6AF94BD2BDCD50640C043B8FB5 /* Pods-traktfy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-traktfy.release.xcconfig"; sourceTree = "<group>"; };
 		788461FB4370D0E71388D50550A6D4CB /* AlamofireImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlamofireImage-dummy.m"; sourceTree = "<group>"; };
+		78AF05B136BEB72962CB50CCACF83CA7 /* Pods-traktfy-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-traktfy-frameworks.sh"; sourceTree = "<group>"; };
 		79EB26059DCF14B086A783A63995F34D /* TransformType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformType.swift; path = Sources/TransformType.swift; sourceTree = "<group>"; };
+		7E4652238C11E428EF537263A02D665D /* Pods-traktfy-traktfyTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-traktfy-traktfyTests-umbrella.h"; sourceTree = "<group>"; };
 		812172D07A2FB8A273896B36B9009997 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		81837F4E98DB051EF1B1F0A2575CA812 /* AlamofireImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AlamofireImage.modulemap; sourceTree = "<group>"; };
 		846B588BECB2C505B8326CE9A49DBF39 /* IntegerOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntegerOperators.swift; path = Sources/IntegerOperators.swift; sourceTree = "<group>"; };
 		84BCF38D17B39ECBF9D9646B153D27B3 /* AlamofireImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireImage-umbrella.h"; sourceTree = "<group>"; };
 		855536BC0C74FCA90DEF530A0CDB5FD6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86E590B54AD9091846947063D90614B7 /* AlamofireNetworkActivityIndicator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AlamofireNetworkActivityIndicator.framework; path = AlamofireNetworkActivityIndicator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		879F759A6B27A983978955C4EE5A4082 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		894E825CA31B160BC1EA511EE81979F2 /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AlamofireImage.framework; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CFCE56948D5A3DEF7CEEB7E77D48276 /* EnumTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumTransform.swift; path = Sources/EnumTransform.swift; sourceTree = "<group>"; };
 		90433CC9B889FAF5475BD86DF5A7D597 /* AlamofireImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlamofireImage.xcconfig; sourceTree = "<group>"; };
 		913AA9F6000E91E51813955DE2F210CC /* EnumOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumOperators.swift; path = Sources/EnumOperators.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		980A80CFCE29D846AD41362004EFEC85 /* Pods-traktfy-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-traktfy-resources.sh"; sourceTree = "<group>"; };
 		9A6EB653109E305263E2A413F82D9E6F /* Map.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Map.swift; path = Sources/Map.swift; sourceTree = "<group>"; };
 		9A81ACC0EE5A12D05D3C88226DA91AD1 /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Source/ImageDownloader.swift; sourceTree = "<group>"; };
 		9D5234743D0FF054862082E47F3A61AE /* DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTransform.swift; path = Sources/DateTransform.swift; sourceTree = "<group>"; };
 		9D9DAC50365D8244FC616D8157405756 /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISO8601DateTransform.swift; path = Sources/ISO8601DateTransform.swift; sourceTree = "<group>"; };
 		9E8864DB3520B428AA5C5B34AE0D137F /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Source/Image.swift; sourceTree = "<group>"; };
 		A203C5B3FBA2A34757D70904B14ED860 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		A4D6DB107C7FDABFDC28630236323451 /* Pods-traktfy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-traktfy.debug.xcconfig"; sourceTree = "<group>"; };
 		A708EE3E764A19353C1C45BC31652601 /* DictionaryTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryTransform.swift; path = Sources/DictionaryTransform.swift; sourceTree = "<group>"; };
 		A804527B8C323AF8CC1042F50ABA75B7 /* TransformOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOperators.swift; path = Sources/TransformOperators.swift; sourceTree = "<group>"; };
+		AA59A0F7C5D1130249DC005CE7FB8044 /* Pods-traktfy-traktfyTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-traktfy-traktfyTests-frameworks.sh"; sourceTree = "<group>"; };
 		AB0CB1ED422CFCF6AEDCCC722F06F36D /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		AB5BC21EB144D9CB5E3035BDC4593BD8 /* NetworkActivityIndicatorManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkActivityIndicatorManager.swift; path = Source/NetworkActivityIndicatorManager.swift; sourceTree = "<group>"; };
 		B188273851E74EEF71237102629F171D /* DataTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataTransform.swift; path = Sources/DataTransform.swift; sourceTree = "<group>"; };
 		B506BA3EDFAA77111A7FD3C7C4FFF5B9 /* NSDecimalNumberTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSDecimalNumberTransform.swift; path = Sources/NSDecimalNumberTransform.swift; sourceTree = "<group>"; };
 		BCB7505F6DBDBBF169588C700B08D4A9 /* DateFormatterTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFormatterTransform.swift; path = Sources/DateFormatterTransform.swift; sourceTree = "<group>"; };
+		BCC044950227A228171C88BCA42B33A0 /* Pods-traktfy-traktfyTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-traktfy-traktfyTests-dummy.m"; sourceTree = "<group>"; };
 		BED7E66883F19C50FDF014292CA64E5B /* ImmutableMappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImmutableMappable.swift; path = Sources/ImmutableMappable.swift; sourceTree = "<group>"; };
 		BEE2F0B8E7D1006ABAA480F9088B6843 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		BF83C255AC9186B3ACE691B151EF24EA /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AlamofireImage.framework; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C02D129EC9964389A19F68F77784B2F8 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		C35E132A8549C7168E7BD2BCF097C173 /* ObjectMapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjectMapper.xcconfig; sourceTree = "<group>"; };
 		C52E8D4DCDB16ABF3FC2D403DA22CEB4 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		C5AB3938F28E3B1297DA5768F044A1D6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C62483DFDFED4B954EA92C287EA08841 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6E48E39774CFF79341937824E8C7031 /* Mappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mappable.swift; path = Sources/Mappable.swift; sourceTree = "<group>"; };
+		D01C9D8296BDEA330C9EFFFB1EE3FDB7 /* Pods-traktfy-traktfyTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-traktfy-traktfyTests-resources.sh"; sourceTree = "<group>"; };
 		D480513123CA6325EA4C662D8D4B2302 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
 		D6B436D6024D100722FAA092CAA76156 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		DA45F1428A784D073647DF073984FB92 /* Pods-traktfy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-traktfy-dummy.m"; sourceTree = "<group>"; };
 		DAB8F297E5EB612467FAE6075FCF40F2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E0B72B1676C75E472DCB1620E676D6BE /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ObjectMapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E51CA83C2829FEAE5DE7FC6AA840FCBF /* Pods-traktfy-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-traktfy-acknowledgements.plist"; sourceTree = "<group>"; };
 		E69EE9B6C7DEDD9A9ADE453D269D191A /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomDateFormatTransform.swift; path = Sources/CustomDateFormatTransform.swift; sourceTree = "<group>"; };
-		F150DC2AD939D566B1342B1524FE5901 /* Pods-traktfy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-traktfy.modulemap"; sourceTree = "<group>"; };
-		F2A3F7E87EEFB789867C05E9BE93448B /* Pods-traktfy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-traktfy-dummy.m"; sourceTree = "<group>"; };
+		E6CFE10DB92D1D69E87A047EDA5D676C /* Pods-traktfy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-traktfy.modulemap"; sourceTree = "<group>"; };
+		F62F189341E6BE0F5D862A63BDDADD21 /* Pods-traktfy-traktfyTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-traktfy-traktfyTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F821E1D5795F0511BE6813A9AA7198DA /* Pods-traktfy-traktfyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-traktfy-traktfyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F88CB21B2FEC1CB3D08C27C591B3C92F /* Request+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Request+AlamofireImage.swift"; path = "Source/Request+AlamofireImage.swift"; sourceTree = "<group>"; };
 		F960B083E4113097757F30CEBBE41DCC /* AFIError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFIError.swift; path = Source/AFIError.swift; sourceTree = "<group>"; };
+		FFC58EA84837D3FB26AA7E95D8DA4723 /* Pods-traktfy-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-traktfy-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7F2035820E3653002D47930BCAEFB7D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BE90E18B4D550CF038B7C58354955BB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		99195E4207764744AEC07ECCBCD550EB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -262,22 +312,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0DD97A0F999F2FF4B8396B8BC61636D1 /* Pods-traktfy */ = {
+		0D444D8038BEE114AC8DEAE199000B80 /* Pods-traktfy-traktfyTests */ = {
 			isa = PBXGroup;
 			children = (
-				24DD78C1CA2BEAC70055B6C2C55C491B /* Info.plist */,
-				F150DC2AD939D566B1342B1524FE5901 /* Pods-traktfy.modulemap */,
-				26893538BFDDA5310AA9A2888394081F /* Pods-traktfy-acknowledgements.markdown */,
-				20FB0C2935148AAB82D60DC0E9919205 /* Pods-traktfy-acknowledgements.plist */,
-				F2A3F7E87EEFB789867C05E9BE93448B /* Pods-traktfy-dummy.m */,
-				48AFF15FC3093A6B8D383AF251B3A82E /* Pods-traktfy-frameworks.sh */,
-				980A80CFCE29D846AD41362004EFEC85 /* Pods-traktfy-resources.sh */,
-				5023206E38A0D8218810EDD571D6F11D /* Pods-traktfy-umbrella.h */,
-				172B6D492388382EF7D60B004627C8BC /* Pods-traktfy.debug.xcconfig */,
-				781D792F3FF02104785A977F25C7A63D /* Pods-traktfy.release.xcconfig */,
+				C5AB3938F28E3B1297DA5768F044A1D6 /* Info.plist */,
+				114F6A4F751A821641F2591450C27E73 /* Pods-traktfy-traktfyTests.modulemap */,
+				F62F189341E6BE0F5D862A63BDDADD21 /* Pods-traktfy-traktfyTests-acknowledgements.markdown */,
+				50B9467B3CFC79596BE119995605842A /* Pods-traktfy-traktfyTests-acknowledgements.plist */,
+				BCC044950227A228171C88BCA42B33A0 /* Pods-traktfy-traktfyTests-dummy.m */,
+				AA59A0F7C5D1130249DC005CE7FB8044 /* Pods-traktfy-traktfyTests-frameworks.sh */,
+				D01C9D8296BDEA330C9EFFFB1EE3FDB7 /* Pods-traktfy-traktfyTests-resources.sh */,
+				7E4652238C11E428EF537263A02D665D /* Pods-traktfy-traktfyTests-umbrella.h */,
+				F821E1D5795F0511BE6813A9AA7198DA /* Pods-traktfy-traktfyTests.debug.xcconfig */,
+				415B7B4CB1DA65672B643EDFC961E2B4 /* Pods-traktfy-traktfyTests.release.xcconfig */,
 			);
-			name = "Pods-traktfy";
-			path = "Target Support Files/Pods-traktfy";
+			name = "Pods-traktfy-traktfyTests";
+			path = "Target Support Files/Pods-traktfy-traktfyTests";
 			sourceTree = "<group>";
 		};
 		21CA2252D57A973AFAD9594B87179ADA /* AlamofireImage */ = {
@@ -298,16 +348,22 @@
 			path = AlamofireImage;
 			sourceTree = "<group>";
 		};
-		2966998077AC58D1A140722FE860CEEF /* Products */ = {
+		2C593F7E4C8AA7848B50BE76BEEA58F7 /* Pods-traktfy */ = {
 			isa = PBXGroup;
 			children = (
-				0F8C7CCE4D5F65A3442DD4E5161789F6 /* Alamofire.framework */,
-				BF83C255AC9186B3ACE691B151EF24EA /* AlamofireImage.framework */,
-				27A32DC552D8A082B8921685D5972C27 /* AlamofireNetworkActivityIndicator.framework */,
-				E0B72B1676C75E472DCB1620E676D6BE /* ObjectMapper.framework */,
-				284CBE5D212952BC590E8406F9394581 /* Pods_traktfy.framework */,
+				06CBD024790969F1A54830730ACB7D68 /* Info.plist */,
+				E6CFE10DB92D1D69E87A047EDA5D676C /* Pods-traktfy.modulemap */,
+				4F819998B11EC1F39D90C3611D0FCBB1 /* Pods-traktfy-acknowledgements.markdown */,
+				E51CA83C2829FEAE5DE7FC6AA840FCBF /* Pods-traktfy-acknowledgements.plist */,
+				DA45F1428A784D073647DF073984FB92 /* Pods-traktfy-dummy.m */,
+				78AF05B136BEB72962CB50CCACF83CA7 /* Pods-traktfy-frameworks.sh */,
+				FFC58EA84837D3FB26AA7E95D8DA4723 /* Pods-traktfy-resources.sh */,
+				59FE648EE5B70BA75CA809F7DCF1DBE2 /* Pods-traktfy-umbrella.h */,
+				A4D6DB107C7FDABFDC28630236323451 /* Pods-traktfy.debug.xcconfig */,
+				77404B6AF94BD2BDCD50640C043B8FB5 /* Pods-traktfy.release.xcconfig */,
 			);
-			name = Products;
+			name = "Pods-traktfy";
+			path = "Target Support Files/Pods-traktfy";
 			sourceTree = "<group>";
 		};
 		59B91F212518421F271EBA85D5530651 /* Frameworks */ = {
@@ -339,8 +395,8 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				59B91F212518421F271EBA85D5530651 /* Frameworks */,
 				C9757686327E035E2B612FEFC2F31F4C /* Pods */,
-				2966998077AC58D1A140722FE860CEEF /* Products */,
-				AB8F94626D3849C64BFE43A9111D35AA /* Targets Support Files */,
+				917DA2230A68604C14496874C06464F7 /* Products */,
+				9A2AB8DB0301FE128DDEF1C0FC733B00 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -362,6 +418,19 @@
 			path = AlamofireNetworkActivityIndicator;
 			sourceTree = "<group>";
 		};
+		917DA2230A68604C14496874C06464F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44D3DACE9FDA52A8B4CD8F8304618395 /* Alamofire.framework */,
+				894E825CA31B160BC1EA511EE81979F2 /* AlamofireImage.framework */,
+				86E590B54AD9091846947063D90614B7 /* AlamofireNetworkActivityIndicator.framework */,
+				4CD379073E9963F5DC02E08833CDEABB /* ObjectMapper.framework */,
+				018478D0E8FF767C7C2DA8FA6AD2B22A /* Pods_traktfy.framework */,
+				6C938D41DCF5A00A2AA34A1C9967CD8C /* Pods_traktfy_traktfyTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		99E2FF151C6D36BDC2F55927712DC61C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -374,6 +443,15 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/AlamofireNetworkActivityIndicator";
+			sourceTree = "<group>";
+		};
+		9A2AB8DB0301FE128DDEF1C0FC733B00 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C593F7E4C8AA7848B50BE76BEEA58F7 /* Pods-traktfy */,
+				0D444D8038BEE114AC8DEAE199000B80 /* Pods-traktfy-traktfyTests */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		AA2C26263BABAD13EA2683C4EDA7ECAB /* Alamofire */ = {
@@ -400,14 +478,6 @@
 			);
 			name = Alamofire;
 			path = Alamofire;
-			sourceTree = "<group>";
-		};
-		AB8F94626D3849C64BFE43A9111D35AA /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0DD97A0F999F2FF4B8396B8BC61636D1 /* Pods-traktfy */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		B3D9CA44FB64F0801B7F8EF468BA4590 /* Support Files */ = {
@@ -500,6 +570,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C5CB736B2EA21186E60EBAA6272E2D93 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D4C7C8009476F5E685F42AF224EDF11 /* Pods-traktfy-traktfyTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EB21FD03B7703901958C3CE43325DAE9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -542,7 +620,7 @@
 			);
 			name = AlamofireNetworkActivityIndicator;
 			productName = AlamofireNetworkActivityIndicator;
-			productReference = 27A32DC552D8A082B8921685D5972C27 /* AlamofireNetworkActivityIndicator.framework */;
+			productReference = 86E590B54AD9091846947063D90614B7 /* AlamofireNetworkActivityIndicator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		56F55F2E33D8483BFF63BDBE8CDC891B /* Pods-traktfy */ = {
@@ -563,7 +641,7 @@
 			);
 			name = "Pods-traktfy";
 			productName = "Pods-traktfy";
-			productReference = 284CBE5D212952BC590E8406F9394581 /* Pods_traktfy.framework */;
+			productReference = 018478D0E8FF767C7C2DA8FA6AD2B22A /* Pods_traktfy.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */ = {
@@ -580,7 +658,7 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = 0F8C7CCE4D5F65A3442DD4E5161789F6 /* Alamofire.framework */;
+			productReference = 44D3DACE9FDA52A8B4CD8F8304618395 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9EFE4C70245EE2857D336B8B9FA4E825 /* AlamofireImage */ = {
@@ -598,7 +676,28 @@
 			);
 			name = AlamofireImage;
 			productName = AlamofireImage;
-			productReference = BF83C255AC9186B3ACE691B151EF24EA /* AlamofireImage.framework */;
+			productReference = 894E825CA31B160BC1EA511EE81979F2 /* AlamofireImage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A6D944C6F9D92AA7F07464A7F1E89CB0 /* Pods-traktfy-traktfyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B0ABE3C15410E1766244EE12A490028 /* Build configuration list for PBXNativeTarget "Pods-traktfy-traktfyTests" */;
+			buildPhases = (
+				5BB0000BA43758BB397E0F1E71C100AC /* Sources */,
+				7F2035820E3653002D47930BCAEFB7D1 /* Frameworks */,
+				C5CB736B2EA21186E60EBAA6272E2D93 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C16561D1D5271451A0E280FA69EEF784 /* PBXTargetDependency */,
+				7FE477CC9ED8420513CE79AAFCE2D8E9 /* PBXTargetDependency */,
+				EB1D43607185DE4A43DA598CF58AC4A3 /* PBXTargetDependency */,
+				642B75571DB4392383483AA2893AED33 /* PBXTargetDependency */,
+			);
+			name = "Pods-traktfy-traktfyTests";
+			productName = "Pods-traktfy-traktfyTests";
+			productReference = 6C938D41DCF5A00A2AA34A1C9967CD8C /* Pods_traktfy_traktfyTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CD6C9FB6B052E1CF663F8A56041EA163 /* ObjectMapper */ = {
@@ -615,7 +714,7 @@
 			);
 			name = ObjectMapper;
 			productName = ObjectMapper;
-			productReference = E0B72B1676C75E472DCB1620E676D6BE /* ObjectMapper.framework */;
+			productReference = 4CD379073E9963F5DC02E08833CDEABB /* ObjectMapper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -635,7 +734,7 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 2966998077AC58D1A140722FE860CEEF /* Products */;
+			productRefGroup = 917DA2230A68604C14496874C06464F7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -644,6 +743,7 @@
 				115FA0D867E07C04838493890DBD8D29 /* AlamofireNetworkActivityIndicator */,
 				CD6C9FB6B052E1CF663F8A56041EA163 /* ObjectMapper */,
 				56F55F2E33D8483BFF63BDBE8CDC891B /* Pods-traktfy */,
+				A6D944C6F9D92AA7F07464A7F1E89CB0 /* Pods-traktfy-traktfyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -713,6 +813,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5BB0000BA43758BB397E0F1E71C100AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AE75417C5F229C84889A8912D57FB46 /* Pods-traktfy-traktfyTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DB0BE2FBB4DB070AD3C57C41C562C32B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -754,6 +862,18 @@
 			target = 115FA0D867E07C04838493890DBD8D29 /* AlamofireNetworkActivityIndicator */;
 			targetProxy = 039716AD36B8ED8C393C26F0CCE86C19 /* PBXContainerItemProxy */;
 		};
+		642B75571DB4392383483AA2893AED33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ObjectMapper;
+			target = CD6C9FB6B052E1CF663F8A56041EA163 /* ObjectMapper */;
+			targetProxy = 1643ECEAF79FA80BA0BD12A17813FB29 /* PBXContainerItemProxy */;
+		};
+		7FE477CC9ED8420513CE79AAFCE2D8E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AlamofireImage;
+			target = 9EFE4C70245EE2857D336B8B9FA4E825 /* AlamofireImage */;
+			targetProxy = 640D447695C10AF881CE243701FDE79D /* PBXContainerItemProxy */;
+		};
 		8937A2057A0DAADF003B7C65E7CE115D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
@@ -766,6 +886,12 @@
 			target = 9EFE4C70245EE2857D336B8B9FA4E825 /* AlamofireImage */;
 			targetProxy = 2560B00946508E395387B75D3C86EF55 /* PBXContainerItemProxy */;
 		};
+		C16561D1D5271451A0E280FA69EEF784 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
+			targetProxy = A80F7E239554B241CC9E41579BD95C89 /* PBXContainerItemProxy */;
+		};
 		D64CF9338DD2EDD88FB8DB127C77C879 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ObjectMapper;
@@ -777,6 +903,12 @@
 			name = Alamofire;
 			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
 			targetProxy = BDB1F5F07BE9706CCB1E7E0419B56E6C /* PBXContainerItemProxy */;
+		};
+		EB1D43607185DE4A43DA598CF58AC4A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AlamofireNetworkActivityIndicator;
+			target = 115FA0D867E07C04838493890DBD8D29 /* AlamofireNetworkActivityIndicator */;
+			targetProxy = D0C036BECB65DEE17B4BCEF7D7C469D6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -924,7 +1056,7 @@
 		};
 		5A22B0EAB08B4B5A023A6AD2B36BB642 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 781D792F3FF02104785A977F25C7A63D /* Pods-traktfy.release.xcconfig */;
+			baseConfigurationReference = 77404B6AF94BD2BDCD50640C043B8FB5 /* Pods-traktfy.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -957,6 +1089,43 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		6F015233CB6BE16FD20D2360DE949847 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F821E1D5795F0511BE6813A9AA7198DA /* Pods-traktfy-traktfyTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-traktfy-traktfyTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-traktfy-traktfyTests/Pods-traktfy-traktfyTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_traktfy_traktfyTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		708A3EB40A9780E5EFBACFC2C752A79A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1056,6 +1225,42 @@
 			};
 			name = Debug;
 		};
+		AEB07CE385417467EDFED323DC3152FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 415B7B4CB1DA65672B643EDFC961E2B4 /* Pods-traktfy-traktfyTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-traktfy-traktfyTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-traktfy-traktfyTests/Pods-traktfy-traktfyTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_traktfy_traktfyTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		CEF7EABEC0D702FBC1C0DE85D43DF92A /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 56C1BA423332CF85E6CEB4C2A2B4A069 /* AlamofireNetworkActivityIndicator.xcconfig */;
@@ -1090,7 +1295,7 @@
 		};
 		D3C7EDFFE333CFE5267F5C470C17DC4A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 172B6D492388382EF7D60B004627C8BC /* Pods-traktfy.debug.xcconfig */;
+			baseConfigurationReference = A4D6DB107C7FDABFDC28630236323451 /* Pods-traktfy.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1242,6 +1447,15 @@
 			buildConfigurations = (
 				D3C7EDFFE333CFE5267F5C470C17DC4A /* Debug */,
 				5A22B0EAB08B4B5A023A6AD2B36BB642 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B0ABE3C15410E1766244EE12A490028 /* Build configuration list for PBXNativeTarget "Pods-traktfy-traktfyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F015233CB6BE16FD20D2360DE949847 /* Debug */,
+				AEB07CE385417467EDFED323DC3152FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

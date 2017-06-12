@@ -57,10 +57,7 @@ public class Show: NSObject, Mappable {
         self.traktTmdb      <- map["show.ids.tmdb"]
         self.traktTvrage    <- map["show.ids.tvrage"]
         self.showOverview   <- map["show.overview"]
-        //self.firstAired     <- (map["show.first_aired"], ISO8601DateTransform())
-        
         self.firstAired     <- (map["show.first_aired"], CustomDateFormatTransform(formatString: "yyyy-MM-dd'T'HH:mm:ss.SSSZ"))
-
         self.airsDay        <- map["show.airs.day"]
         self.airsTime       <- map["show.airs.time"]
         self.airsTimezone   <- map["show.airs.timezone"]
@@ -73,7 +70,6 @@ public class Show: NSObject, Mappable {
         self.status         <- map["show.status"]
         self.rating         <- map["show.rating"]
         self.votes          <- map["show.votes"]
-        //self.updatedAt      <- (map["show.updated_at"], ISO8601DateTransform())
         self.updatedAt      <- (map["show.updated_at"], CustomDateFormatTransform(formatString: "yyyy-MM-dd'T'HH:mm:ss.SSSZ"))
         self.language       <- map["show.language"]
         self.availableTranslations <- map["show.available_translations"]

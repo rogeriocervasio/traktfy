@@ -14,7 +14,7 @@ class ShowDetailViewController: UIViewController, NSFetchedResultsControllerDele
     var managedObjectContext: NSManagedObjectContext? = nil
 
     @IBOutlet weak var labelTitle: UILabel!
-    @IBOutlet weak var buttonFollow: UIButton!
+    @IBOutlet weak var buttonFollow: RoundedButton!
     @IBOutlet weak var labelYear: UILabel!
     @IBOutlet weak var labelGenre: UILabel!
     @IBOutlet weak var labelOverview: UILabel!
@@ -55,9 +55,9 @@ class ShowDetailViewController: UIViewController, NSFetchedResultsControllerDele
         self.managedObjectContext = CoreDataStack.sharedInstance.persistentContainer.viewContext
         
         if self.fetchShowByID(traktID: (self.show?.traktID)!) != nil {
-            self.buttonFollow.isSelected = true
+//            self.buttonFollow.isSelected = true
             self.buttonFollow.backgroundColor = #colorLiteral(red: 0.2176683843, green: 0.8194433451, blue: 0.2584097683, alpha: 1)
-            self.buttonFollow.setTitleColor(#colorLiteral(red: 0.2176683843, green: 0.8194433451, blue: 0.2584097683, alpha: 1), for: .selected)
+//            self.buttonFollow.setTitleColor(#colorLiteral(red: 0.2176683843, green: 0.8194433451, blue: 0.2584097683, alpha: 1), for: .normal)
             self.buttonFollow.isEnabled = false
         }
         
@@ -86,9 +86,9 @@ class ShowDetailViewController: UIViewController, NSFetchedResultsControllerDele
         
         print("ShowDetailViewController \(#function) - self.show?.traktID: \((self.show?.traktID)!)")
         
-        self.buttonFollow.isSelected = true
+//        self.buttonFollow.isSelected = true
         self.buttonFollow.backgroundColor = #colorLiteral(red: 0.2176683843, green: 0.8194433451, blue: 0.2584097683, alpha: 1)
-        self.buttonFollow.setTitleColor(#colorLiteral(red: 0.2176683843, green: 0.8194433451, blue: 0.2584097683, alpha: 1), for: .selected)
+//        self.buttonFollow.setTitleColor(#colorLiteral(red: 0.2176683843, green: 0.8194433451, blue: 0.2584097683, alpha: 1), for: .selected)
         self.buttonFollow.isEnabled = false
         
         //let newShow = NSEntityDescription.insertNewObject(forEntityName: "ShowEntity", into: self.managedObjectContext!) as? ShowEntity

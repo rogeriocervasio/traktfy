@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Next View Controller-->
         <scene sceneID="acj-9G-Xiy">
             <objects>
-                <viewController id="LWT-ty-2BI" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="LWT-ty-2BI" customClass="NextViewController" customModule="traktfy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5Jm-aD-Fnn"/>
                         <viewControllerLayoutGuide type="bottom" id="LeN-Jt-iL7"/>
@@ -21,18 +21,42 @@
                     <view key="view" contentMode="scaleToFill" id="OiG-5v-nFJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0ef-zT-gTq">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="nextEpisodesCell" id="xrR-pe-xwt">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xrR-pe-xwt" id="z7H-eT-wb1">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0ef-zT-gTq" firstAttribute="top" secondItem="5Jm-aD-Fnn" secondAttribute="bottom" id="CaQ-9p-8ZG"/>
+                            <constraint firstItem="0ef-zT-gTq" firstAttribute="leading" secondItem="OiG-5v-nFJ" secondAttribute="leading" id="h8Q-3r-s1l"/>
+                            <constraint firstAttribute="trailing" secondItem="0ef-zT-gTq" secondAttribute="trailing" id="icd-y5-f3m"/>
+                            <constraint firstItem="LeN-Jt-iL7" firstAttribute="top" secondItem="0ef-zT-gTq" secondAttribute="bottom" id="iwv-P7-CVH"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TDv-e3-lIP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ax1-M2-LsW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2031" y="917"/>
+            <point key="canvasLocation" x="1942" y="917"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="89j-Ha-giP">
             <objects>
-                <viewController id="T6Y-xg-Og8" customClass="SearchViewController" customModule="traktfy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="T6Y-xg-Og8" customClass="SearchViewController" customModule="traktfy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="e8v-U7-csl"/>
                         <viewControllerLayoutGuide type="bottom" id="BWW-d1-5jz"/>
@@ -41,12 +65,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="73" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="mhS-Vm-nDR">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="73" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mhS-Vm-nDR">
+                                <rect key="frame" x="0.0" y="108" width="375" height="510"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="searchSeriesCell" rowHeight="73" id="huu-Fx-YxM" customClass="SearchTableViewCell" customModule="traktfy" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="1" width="375" height="73"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="73"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="huu-Fx-YxM" id="MyM-YK-koZ">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
@@ -101,7 +125,7 @@
                             <constraint firstItem="mhS-Vm-nDR" firstAttribute="leading" secondItem="0Cr-S4-nsI" secondAttribute="leading" id="giA-rW-gfQ"/>
                             <constraint firstAttribute="trailing" secondItem="AhY-CV-Rdi" secondAttribute="trailing" id="mB8-z8-v0i"/>
                             <constraint firstAttribute="trailing" secondItem="mhS-Vm-nDR" secondAttribute="trailing" id="oJx-F9-LNK"/>
-                            <constraint firstItem="mhS-Vm-nDR" firstAttribute="top" secondItem="AhY-CV-Rdi" secondAttribute="top" id="qTV-hx-NeO"/>
+                            <constraint firstItem="mhS-Vm-nDR" firstAttribute="top" secondItem="AhY-CV-Rdi" secondAttribute="bottom" id="qTV-hx-NeO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="e82-8l-HQB"/>
@@ -148,7 +172,7 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0S-1q-MYN">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0S-1q-MYN" customClass="RoundedButton" customModule="traktfy" customModuleProvider="target">
                                 <rect key="frame" x="257" y="72" width="102" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -157,6 +181,11 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <state key="selected" title="Seguindo"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="followNewShow:" destination="zs4-5I-rcR" eventType="touchUpInside" id="b7V-sa-Iev"/>
                                 </connections>
@@ -321,11 +350,11 @@
             </objects>
             <point key="canvasLocation" x="1092" y="139"/>
         </scene>
-        <!--Destaques-->
+        <!--Em breve-->
         <scene sceneID="Kp6-pD-cXm">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RIe-vc-ysw" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Destaques" image="ic_bell_white" selectedImage="ic_bell_orange" id="1hJ-bc-ixF"/>
+                    <tabBarItem key="tabBarItem" title="Em breve" image="ic_bell_white" selectedImage="ic_bell_orange" id="1hJ-bc-ixF"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cc6-4b-SQd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -362,7 +391,7 @@
         <!--My Series Detail View Controller-->
         <scene sceneID="ZAq-Sn-W2q">
             <objects>
-                <viewController id="o1I-3g-KxQ" customClass="MySeriesDetailViewController" customModule="traktfy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="o1I-3g-KxQ" customClass="MySeriesDetailViewController" customModule="traktfy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="htp-0F-qqN"/>
                         <viewControllerLayoutGuide type="bottom" id="th8-1o-j6I"/>
@@ -392,7 +421,7 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bs-NV-LLz">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bs-NV-LLz" customClass="RoundedButton" customModule="traktfy" customModuleProvider="target">
                                 <rect key="frame" x="257" y="72" width="102" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -401,6 +430,11 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <state key="selected" title="Seguindo"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="overview" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfN-wi-3fL">
                                 <rect key="frame" x="16" y="158" width="343" height="16"/>
@@ -408,13 +442,13 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="R2t-LV-xMN">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="R2t-LV-xMN">
                                 <rect key="frame" x="0.0" y="182" width="375" height="436"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="mySeasonCell" rowHeight="80" id="iUg-Hm-QiF" customClass="SeasonTableViewCell" customModule="traktfy" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="1" width="375" height="80"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iUg-Hm-QiF" id="gk3-CB-4ym">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
@@ -484,7 +518,7 @@
         <!--Episodes View Controller-->
         <scene sceneID="YNV-vw-8Lg">
             <objects>
-                <viewController id="ceq-zL-OYK" customClass="EpisodesViewController" customModule="traktfy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="ceq-zL-OYK" customClass="EpisodesViewController" customModule="traktfy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jgd-Sx-ehH"/>
                         <viewControllerLayoutGuide type="bottom" id="Ee2-kU-sV1"/>
@@ -493,12 +527,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Od6-Pw-cs4">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Od6-Pw-cs4">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myEpisodeCell" id="Uxo-aO-6II" customClass="EpisodeTableViewCell" customModule="traktfy" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="1" width="375" height="80"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Uxo-aO-6II" id="9Y0-KB-aGn">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
@@ -518,7 +552,7 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAg-3g-5qc">
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAg-3g-5qc" customClass="RoundedButton" customModule="traktfy" customModuleProvider="target">
                                                     <rect key="frame" x="325" y="9" width="32" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -527,6 +561,11 @@
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                     <state key="selected" title="Seguindo"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="16"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                     <connections>
                                                         <action selector="actionWatchedWithSender:" destination="ceq-zL-OYK" eventType="touchUpInside" id="J0Z-9f-X6b"/>
                                                     </connections>

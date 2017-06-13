@@ -12,7 +12,7 @@ class EpisodeTableViewCell: UITableViewCell {
     
     @IBOutlet weak var labelEpisode: UILabel!
     @IBOutlet weak var labelTitle: UILabel!
-    @IBOutlet weak var buttonWatched: UIButton!
+    @IBOutlet weak var buttonWatched: RoundedButton!
     @IBOutlet weak var labelOverview: UILabel!
     
     override func prepareForReuse() {

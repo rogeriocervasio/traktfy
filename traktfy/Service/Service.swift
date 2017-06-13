@@ -31,6 +31,23 @@ public class Service: BaseService {
     }
 
     
+    public func getNextEpisode(traktID: Int, extendedOptions: String, completion: ((_ finished: Bool, _ nextEpisode: Episode?) -> Void)? = nil) -> Request {
+        // GET https://api.trakt.tv/shows/44768/next_episode?extended=full
+        
+        let parameters = ["extended": extendedOptions] as [String : Any]
+        
+        return self.apiRequest(.get, address: self.baseAPI! + "/shows/\(traktID)/next_episode", parameters: parameters) { (_ finished, _ response) in
+            
+            var nextEpisode: Episode?
+            
+            if finished {
+                
+                nextEpisode = Mapper<Episode>().map(JSONObject: response)
+            }
+            
+            completion?(finished, nextEpisode)
+        }
+    }
     
     
     public func getSeasonEpisodes(traktID: Int, seasonNumber: Int32, extendedOptions: String, completion: ((_ finished: Bool, _ episodes: [Episode]?) -> Void)? = nil) -> Request {

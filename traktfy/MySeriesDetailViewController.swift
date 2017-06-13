@@ -14,7 +14,7 @@ class MySeriesDetailViewController: UIViewController, NSFetchedResultsController
     var managedObjectContext: NSManagedObjectContext? = nil
     
     @IBOutlet weak var labelTitle: UILabel!
-    @IBOutlet weak var buttonFollow: UIButton!
+    @IBOutlet weak var buttonFollow: RoundedButton!
     @IBOutlet weak var labelYear: UILabel!
     @IBOutlet weak var labelGenre: UILabel!
     @IBOutlet weak var labelOverview: UILabel!

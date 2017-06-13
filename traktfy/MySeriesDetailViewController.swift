@@ -32,11 +32,24 @@ class MySeriesDetailViewController: UIViewController, NSFetchedResultsController
     
     func config() {
         
-        self.labelTitle.text = self.showEntity?.showTitle?.description
+        self.managedObjectContext = CoreDataStack.sharedInstance.persistentContainer.viewContext
         
+        self.labelTitle.text = self.showEntity?.showTitle?.description
         self.labelOverview.text = self.showEntity?.showOverview?.description
         self.labelYear.text = "\((self.showEntity?.showYear)!)"
-        self.managedObjectContext = CoreDataStack.sharedInstance.persistentContainer.viewContext
+        
+        let genresArray = self.showEntity?.genres
+        var genres = ""
+        
+        for genre in genresArray! {
+            if genres.isEmpty {
+                genres = genre
+            } else {
+                genres += ", \(genre)"
+            }
+        }
+        
+        self.labelGenre.text = genres
     }
 
     override func didReceiveMemoryWarning() {
@@ -54,6 +67,7 @@ class MySeriesDetailViewController: UIViewController, NSFetchedResultsController
             
             let episodesViewController = segue.destination as! EpisodesViewController
             
+            episodesViewController.seriesTitle = self.showEntity?.showTitle?.description
             episodesViewController.seasonEntity = sender as? SeasonEntity
         }
         

@@ -11,11 +11,17 @@ import UIKit
 class MySeriesTableViewCell: UITableViewCell {
 
     @IBOutlet weak var labelTitle: UILabel!
+    @IBOutlet weak var labelDetail: UILabel!
+    @IBOutlet weak var labelGenre: UILabel!
+    @IBOutlet weak var labelEpisodes: UILabel!
     
     override func prepareForReuse() {
         super.prepareForReuse()
         
         self.labelTitle.text = nil
+        self.labelDetail.text = nil
+        self.labelGenre.text = nil
+        self.labelEpisodes.text = nil
     }
 
     override func awakeFromNib() {

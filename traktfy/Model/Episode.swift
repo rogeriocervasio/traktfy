@@ -13,6 +13,7 @@ public class Episode: NSObject, Mappable {
     public var watched: Bool?
     public var showID: Int?
     public var seasonID: Int?
+    public var showTitle: String?
     
     public var season: Int?
     public var number: Int?

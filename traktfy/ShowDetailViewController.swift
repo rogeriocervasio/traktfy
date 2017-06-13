@@ -41,6 +41,18 @@ class ShowDetailViewController: UIViewController, NSFetchedResultsControllerDele
         self.labelYear.text = "\((self.show?.showYear)!)"
         self.labelOverview.text = (self.show?.showOverview)!
         
+        let genresArray = self.show?.genres
+        var genres = ""
+        
+        for genre in genresArray! {
+            if genres.isEmpty {
+                genres = genre
+            } else {
+                genres += ", \(genre)"
+            }
+        }
+        self.labelGenre.text = genres
+        
         self.config()
     }
 
@@ -109,13 +121,13 @@ class ShowDetailViewController: UIViewController, NSFetchedResultsControllerDele
         newShow.showOverview = (self.show?.showOverview)!
         
         newShow.firstAired      = (self.show?.firstAired != nil ? (self.show?.firstAired)! : nil)
-        newShow.airsDay         = (self.show?.airsDay)!
-        newShow.airsTime        = (self.show?.airsTime)!
-        newShow.airsTimezone    = (self.show?.airsTimezone)!
+        newShow.airsDay         = (self.show?.airsDay != nil ? (self.show?.airsDay)! : nil)
+        newShow.airsTime        = (self.show?.airsTime != nil ? (self.show?.airsTime)! : nil)
+        newShow.airsTimezone    = (self.show?.airsTimezone != nil ? (self.show?.airsTimezone)! : nil)
         newShow.runtime         = Int32((self.show?.runtime)!)
-        newShow.certification   = (self.show?.certification)!
-        newShow.network         = (self.show?.network)!
-        newShow.country         = (self.show?.country)!
+        newShow.certification   = (self.show?.certification != nil ? (self.show?.certification)! : nil)
+        newShow.network         = (self.show?.network != nil ? (self.show?.network)! : nil)
+        newShow.country         = (self.show?.country != nil ? (self.show?.country)! : nil)
         newShow.trailer         = (self.show?.trailer != nil ? (self.show?.trailer)! : nil)
         newShow.homepage        = (self.show?.homepage != nil ? (self.show?.homepage)! : nil)
         newShow.status          = (self.show?.status != nil ? (self.show?.status)! : nil)
@@ -215,7 +227,7 @@ extension ShowDetailViewController: UITableViewDataSource {
         
     }
 }
-
+/*
 extension ShowDetailViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -226,5 +238,5 @@ extension ShowDetailViewController: UITableViewDelegate {
         
         self.performSegue(withIdentifier: "segueShowDetail", sender: show)
     }
-    
 }
+*/

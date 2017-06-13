@@ -22,6 +22,12 @@ class MySeriesViewController: UITableViewController, NSFetchedResultsControllerD
         self.managedObjectContext = CoreDataStack.sharedInstance.persistentContainer.viewContext
 
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+        self.tableView.reloadData()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -98,7 +104,52 @@ class MySeriesViewController: UITableViewController, NSFetchedResultsControllerD
     func configureCell(_ cell: UITableViewCell, withShow showEntity: ShowEntity) {
         let mySeries = cell as! MySeriesTableViewCell
         mySeries.labelTitle.text = showEntity.showTitle?.description
-        //cell.textLabel!.text = showEntity.showTitle?.description
+        let year = (showEntity.showYear > 0 ? "\(showEntity.showYear)" : "")
+        let country = (showEntity.country != nil ? "| "+(showEntity.country?.description)! : "")
+        let status = (showEntity.status != nil ? "| "+(showEntity.status?.description)! : "")
+        
+        mySeries.labelDetail.text = "\(year) \(String(describing: country)) \(String(describing: status))"
+        
+        let genresArray = showEntity.genres
+        var genres = ""
+        
+        for genre in genresArray! {
+            if genres.isEmpty {
+                genres = genre
+            } else {
+                genres += ", \(genre)"
+            }
+        }
+        
+        mySeries.labelGenre.text = genres
+        
+        if let watchedEpisodesCount = self.fetchWatchedEpisodesByShowID(showID: showEntity.traktID) {
+            if watchedEpisodesCount > 0 {                
+                //print("watchedEpisodesCount: \(showEntity.airedEpisodes)/\(watchedEpisodesCount)")
+                let percentageWatched = Double(watchedEpisodesCount*100)/Double(showEntity.airedEpisodes)
+                mySeries.labelEpisodes.text = String(format: "Episódios assistidos \(watchedEpisodesCount)/\(showEntity.airedEpisodes) (%.1f%%)", percentageWatched)
+            } else {
+                mySeries.labelEpisodes.text = "Nenhum episódio assistido"
+            }
+        }
+    }
+    
+    func fetchWatchedEpisodesByShowID(showID: Int32) -> Int? {
+        //print("MySeriesViewController \(#function) - showID: \(showID)")
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "EpisodeEntity")
+        fetchRequest.predicate = NSPredicate(format: "showID == %i AND watched == true", Int(showID))
+        //fetchRequest.predicate = NSPredicate(format: "watched == true")
+        
+        var results: [AnyObject]
+        do {
+            try results = managedObjectContext!.fetch(fetchRequest)
+        } catch {
+            print("Error when fetching Episodes by showID: \(error)")
+            return nil
+        }
+        
+        return results.count
     }
     
     // MARK: - Fetched results controller

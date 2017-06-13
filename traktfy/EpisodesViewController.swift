@@ -15,6 +15,7 @@ class EpisodesViewController: UIViewController, NSFetchedResultsControllerDelega
     
     var managedObjectContext: NSManagedObjectContext? = nil
     
+    var seriesTitle: String?
     var seasonEntity: SeasonEntity?
     
     override func viewDidLoad() {
@@ -26,12 +27,13 @@ class EpisodesViewController: UIViewController, NSFetchedResultsControllerDelega
     
     func config() {
         
+        self.navigationItem.title = self.seriesTitle!
+        
         self.managedObjectContext = CoreDataStack.sharedInstance.persistentContainer.viewContext
         
         if self.fetchEpisodesBySeasonID(seasonID: (seasonEntity?.seasonID)!) == nil {
             self.getEpisodesFromAPI(traktID: Int((seasonEntity?.showID)!), seasonNumber: (seasonEntity?.seasonNumber)!)
         }
-        
     }
     
     func fetchEpisodesBySeasonID(seasonID: Int32) -> EpisodeEntity? {
@@ -42,7 +44,7 @@ class EpisodesViewController: UIViewController, NSFetchedResultsControllerDelega
         
         var results: [AnyObject]
         do {
-            try results = managedObjectContext!.fetch(fetchRequest)
+            try results = self.managedObjectContext!.fetch(fetchRequest)
         } catch {
             print("Error when fetching Episode by seasonID: \(error)")
             return nil
@@ -100,27 +102,46 @@ class EpisodesViewController: UIViewController, NSFetchedResultsControllerDelega
     @IBAction func actionWatched(sender: UIButton) {
         print("EpisodesViewController \(#function) - episodeID: \(sender.tag)")
         
-        if let episode = self.fetchByEpisodeID(episodeID: Int32(sender.tag)) {
-            
-            episode.watched = !episode.watched
-        }
+//        if let episode = self.fetchByEpisodeID(episodeID: Int32(sender.tag)) {
+//            
+//            episode.watched = !episode.watched
+//        }
+        
+        self.fetchByEpisodeID(episodeID: Int32(sender.tag))
     }
     
-    func fetchByEpisodeID(episodeID: Int32) -> EpisodeEntity? {
+    func fetchByEpisodeID(episodeID: Int32){
         print("EpisodesViewController \(#function) - episodeID: \(episodeID)")
         
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "EpisodeEntity")
+        let fetchRequest = NSFetchRequest<EpisodeEntity>(entityName: "EpisodeEntity")
         fetchRequest.predicate = NSPredicate(format: "episodeID == %i", episodeID)
         
         var results: [AnyObject]
         do {
             try results = managedObjectContext!.fetch(fetchRequest)
+            
+            let episode = results.first as? EpisodeEntity
+            
+            if !(episode?.watched)! {
+                episode?.watched = true
+            } else {
+                episode?.watched = false
+            }
+            //episode?.watched = !(episode?.watched)!
+            
+            do {
+                try self.managedObjectContext?.save()
+            } catch let error {
+                print(error)
+            }
+            
         } catch {
             print("Error when fetching Episode by episodeID: \(error)")
-            return nil
+            //return nil
         }
         
-        return results.first as? EpisodeEntity
+        //return results.first as? EpisodeEntity
+        //return episode
     }
 
     override func didReceiveMemoryWarning() {

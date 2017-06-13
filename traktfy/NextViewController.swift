@@ -57,7 +57,7 @@ class NextViewController: UIViewController {
                 print("NextViewController \(#function) - show.showTitle: \(String(describing: show.showTitle?.description)) - show.status: \(String(describing: show.status?.description)) - show.traktID: \(show.traktID)")
                 
                 if show.status == "returning series" {
-                    self.getNextEpisode(traktID: Int(show.traktID))
+                    self.getNextEpisode(traktID: Int(show.traktID), showName: show.showTitle?.description)
                 }
             }
             
@@ -66,11 +66,13 @@ class NextViewController: UIViewController {
         }
     }
     
-    func getNextEpisode(traktID: Int, completion: ((_ finished: Bool) -> Void)? = nil) {
+    func getNextEpisode(traktID: Int, showName: String?, completion: ((_ finished: Bool) -> Void)? = nil) {
         
         _ = Service.shared.getNextEpisode(traktID: traktID, extendedOptions: "full") { (finished, episode) in
             
             if finished && episode != nil {
+                
+                episode?.showTitle = showName
                 
                 self.episodeArray.append(episode!)
                 let indexPath : NSIndexPath = NSIndexPath(row: (self.episodeArray.count > 0) ? self.episodeArray.count - 1 : 0, section: 0)
@@ -109,6 +111,7 @@ extension NextViewController: UITableViewDataSource {
         
         let episode = self.episodeArray[indexPath.row]
 
+        cell.labelSeriesName.text = (episode.showTitle != nil ? episode.showTitle :  "No name")
         cell.labelEpisode.text = "Season \(episode.season ?? 0) - Episode \(episode.number ?? 0)"
         cell.labelDate.text = (episode.firstAired != nil ? self.dateFormatter.string(from: episode.firstAired!) : "Unknown date")
         cell.labelTitle.text = (episode.title != nil ? episode.title! : "No title available")

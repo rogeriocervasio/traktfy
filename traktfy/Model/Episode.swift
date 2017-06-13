@@ -48,8 +48,8 @@ public class Episode: NSObject, Mappable {
         self.episodeOverview <- map["overview"]
         self.rating         <- map["rating"]
         self.votes          <- map["votes"]
-        self.firstAired     <- (map["first_aired"], ISO8601DateTransform())
-        self.updatedAt      <- (map["updated_at"], ISO8601DateTransform())
+        self.firstAired     <- (map["first_aired"], CustomDateFormatTransform(formatString: "yyyy-MM-dd'T'HH:mm:ss.SSSZ"))
+        self.updatedAt      <- (map["updated_at"], CustomDateFormatTransform(formatString: "yyyy-MM-dd'T'HH:mm:ss.SSSZ"))
         self.availableTranslations <- map["available_translations"]
     }
 }

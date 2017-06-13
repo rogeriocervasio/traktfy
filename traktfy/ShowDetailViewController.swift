@@ -58,6 +58,7 @@ class ShowDetailViewController: UIViewController, NSFetchedResultsControllerDele
 //            self.buttonFollow.isSelected = true
             self.buttonFollow.backgroundColor = #colorLiteral(red: 0.2176683843, green: 0.8194433451, blue: 0.2584097683, alpha: 1)
 //            self.buttonFollow.setTitleColor(#colorLiteral(red: 0.2176683843, green: 0.8194433451, blue: 0.2584097683, alpha: 1), for: .normal)
+            self.buttonFollow.setTitle("Seguindo", for: .normal)
             self.buttonFollow.isEnabled = false
         }
         
@@ -89,6 +90,7 @@ class ShowDetailViewController: UIViewController, NSFetchedResultsControllerDele
 //        self.buttonFollow.isSelected = true
         self.buttonFollow.backgroundColor = #colorLiteral(red: 0.2176683843, green: 0.8194433451, blue: 0.2584097683, alpha: 1)
 //        self.buttonFollow.setTitleColor(#colorLiteral(red: 0.2176683843, green: 0.8194433451, blue: 0.2584097683, alpha: 1), for: .selected)
+        self.buttonFollow.setTitle("Seguindo", for: .normal)
         self.buttonFollow.isEnabled = false
         
         //let newShow = NSEntityDescription.insertNewObject(forEntityName: "ShowEntity", into: self.managedObjectContext!) as? ShowEntity

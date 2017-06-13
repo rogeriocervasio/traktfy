@@ -43,7 +43,7 @@ public class Season: NSObject, Mappable {
         self.airedEpisodes  <- map["aired_episodes"]
         self.seasonTitle    <- map["title"]
         self.seasonOverview <- map["overview"]
-        self.firstAired     <- (map["first_aired"], ISO8601DateTransform())
+        self.firstAired     <- (map["first_aired"], CustomDateFormatTransform(formatString: "yyyy-MM-dd'T'HH:mm:ss.SSSZ"))
     }
 }
 /*

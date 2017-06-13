@@ -21,18 +21,11 @@ public class Service: BaseService {
         self.baseVersion = "2"
         self.apiClientID = "019a13b1881ae971f91295efc7fdecfa48b32c2a69fe6dd03180ff59289452b8"
         
-        /*
-         Content-Type:application/json
-         trakt-api-version:2
-         trakt-api-key:[client_id]
-         */
-        
         self.startReachabilityMonitoring()
     }
 
     
     public func getNextEpisode(traktID: Int, extendedOptions: String, completion: ((_ finished: Bool, _ nextEpisode: Episode?) -> Void)? = nil) -> Request {
-        // GET https://api.trakt.tv/shows/44768/next_episode?extended=full
         
         let parameters = ["extended": extendedOptions] as [String : Any]
         
@@ -51,7 +44,6 @@ public class Service: BaseService {
     
     
     public func getSeasonEpisodes(traktID: Int, seasonNumber: Int32, extendedOptions: String, completion: ((_ finished: Bool, _ episodes: [Episode]?) -> Void)? = nil) -> Request {
-        // GET https://api.trakt.tv/shows/44768/seasons/1?extended=full
         
         let parameters = ["extended": extendedOptions] as [String : Any]
         
@@ -69,8 +61,6 @@ public class Service: BaseService {
     }
     
     public func getShowSeasons(traktID: Int, extendedOptions: String, completion: ((_ finished: Bool, _ seasons: [Season]?) -> Void)? = nil) -> Request {
-        // GET https://api.trakt.tv/shows/id/seasons
-        // GET https://api.trakt.tv/shows/44768/seasons?extended=full&page=1
         
         let parameters = ["extended": extendedOptions] as [String : Any]
         
